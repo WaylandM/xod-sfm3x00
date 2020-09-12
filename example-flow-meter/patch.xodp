@@ -1,0 +1,151 @@
+{
+  "description": "Patch to test sfm3x00-flow-meter. Run in debug mode.",
+  "links": [
+    {
+      "id": "BJmbbjqVP",
+      "input": {
+        "nodeId": "Syk2VCGVv",
+        "pinKey": "HkXK-dGob"
+      },
+      "output": {
+        "nodeId": "BkRgWj9Nw",
+        "pinKey": "SknHgsqVw"
+      }
+    },
+    {
+      "id": "H11AVCf4P",
+      "input": {
+        "nodeId": "SksaERz4w",
+        "pinKey": "HkXK-dGob"
+      },
+      "output": {
+        "nodeId": "BJ324AMVw",
+        "pinKey": "r1yhZRd8W"
+      }
+    },
+    {
+      "id": "H1KEbscND",
+      "input": {
+        "nodeId": "BkRgWj9Nw",
+        "pinKey": "S1z1-icVw"
+      },
+      "output": {
+        "nodeId": "B1Q4Zo5VP",
+        "pinKey": "Bkf4BDsmV"
+      }
+    },
+    {
+      "id": "SkazPpq4P",
+      "input": {
+        "nodeId": "H1tzwaqEP",
+        "pinKey": "HkXK-dGob"
+      },
+      "output": {
+        "nodeId": "BkDfwpqNP",
+        "pinKey": "r1yhZRd8W"
+      }
+    },
+    {
+      "id": "r11mwacED",
+      "input": {
+        "nodeId": "BkDfwpqNP",
+        "pinKey": "HJAq-A_8-"
+      },
+      "output": {
+        "nodeId": "BkRgWj9Nw",
+        "pinKey": "B1_VLT54v"
+      }
+    },
+    {
+      "id": "rytHWjc4D",
+      "input": {
+        "nodeId": "BJ324AMVw",
+        "pinKey": "HJAq-A_8-"
+      },
+      "output": {
+        "nodeId": "BkRgWj9Nw",
+        "pinKey": "rkxnBliqEw"
+      }
+    }
+  ],
+  "nodes": [
+    {
+      "id": "B1Q4Zo5VP",
+      "position": {
+        "units": "slots",
+        "x": 6,
+        "y": 0
+      },
+      "type": "xod/debug/tweak-pulse"
+    },
+    {
+      "id": "BJ324AMVw",
+      "position": {
+        "units": "slots",
+        "x": 4,
+        "y": 2
+      },
+      "type": "xod/core/count"
+    },
+    {
+      "id": "BkDfwpqNP",
+      "position": {
+        "units": "slots",
+        "x": 8,
+        "y": 2
+      },
+      "type": "xod/core/count"
+    },
+    {
+      "id": "BkRgWj9Nw",
+      "position": {
+        "units": "slots",
+        "x": 4,
+        "y": 1
+      },
+      "type": "@/sfm3x00-flow-meter"
+    },
+    {
+      "id": "H1tzwaqEP",
+      "position": {
+        "units": "slots",
+        "x": 8,
+        "y": 3
+      },
+      "size": {
+        "height": 1,
+        "units": "slots",
+        "width": 2
+      },
+      "type": "xod/debug/watch"
+    },
+    {
+      "id": "SksaERz4w",
+      "position": {
+        "units": "slots",
+        "x": 5,
+        "y": 3
+      },
+      "size": {
+        "height": 1,
+        "units": "slots",
+        "width": 2
+      },
+      "type": "xod/debug/watch"
+    },
+    {
+      "id": "Syk2VCGVv",
+      "position": {
+        "units": "slots",
+        "x": 2,
+        "y": 3
+      },
+      "size": {
+        "height": 1,
+        "units": "slots",
+        "width": 2
+      },
+      "type": "xod/debug/watch"
+    }
+  ]
+}

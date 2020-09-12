@@ -1,64 +1,193 @@
 {
-  "description": "Sensirion SFM3X00 series flow meter.",
+  "links": [
+    {
+      "id": "H14UxiqNP",
+      "input": {
+        "nodeId": "SknHgsqVw",
+        "pinKey": "__in__"
+      },
+      "output": {
+        "nodeId": "SJGQes9NP",
+        "pinKey": "H1_AF9qVD"
+      }
+    },
+    {
+      "id": "HJPJ-i94w",
+      "input": {
+        "nodeId": "HkKteicED",
+        "pinKey": "rkUUicc4P"
+      },
+      "output": {
+        "nodeId": "S1z1-icVw",
+        "pinKey": "__out__"
+      }
+    },
+    {
+      "id": "HkrDxocND",
+      "input": {
+        "nodeId": "SJGQes9NP",
+        "pinKey": "S1jhKqcEw"
+      },
+      "output": {
+        "nodeId": "Hy1DeicEv",
+        "pinKey": "__out__"
+      }
+    },
+    {
+      "id": "Hy7Oxj5VD",
+      "input": {
+        "nodeId": "Sk0gljqEP",
+        "pinKey": "rkTlIccND"
+      },
+      "output": {
+        "nodeId": "Sy0PlicNw",
+        "pinKey": "__out__"
+      }
+    },
+    {
+      "id": "Hy8Ugo9Ew",
+      "input": {
+        "nodeId": "rkxnBliqEw",
+        "pinKey": "__in__"
+      },
+      "output": {
+        "nodeId": "SJGQes9NP",
+        "pinKey": "B1gs9c5Nw"
+      }
+    },
+    {
+      "id": "S1XXeocNv",
+      "input": {
+        "nodeId": "SJGQes9NP",
+        "pinKey": "H175K5cEw"
+      },
+      "output": {
+        "nodeId": "Sk0gljqEP",
+        "pinKey": "SkkfLc5ED"
+      }
+    },
+    {
+      "id": "SkTE8a5VD",
+      "input": {
+        "nodeId": "B1_VLT54v",
+        "pinKey": "__in__"
+      },
+      "output": {
+        "nodeId": "HkKteicED",
+        "pinKey": "rykFo5cVD"
+      }
+    },
+    {
+      "id": "Syjiej5Ev",
+      "input": {
+        "nodeId": "HkKteicED",
+        "pinKey": "rkpNo59Nw"
+      },
+      "output": {
+        "nodeId": "Sk0gljqEP",
+        "pinKey": "SkkfLc5ED"
+      }
+    }
+  ],
   "nodes": [
     {
-      "description": "Flow rate (standard litre per minute).",
-      "id": "BycdGazNP",
-      "label": "SLM",
+      "description": "Pulse on soft reset.",
+      "id": "B1_VLT54v",
+      "label": "SR",
       "position": {
         "units": "slots",
-        "x": -11,
-        "y": -1
-      },
-      "type": "xod/patch-nodes/output-number"
-    },
-    {
-      "id": "H1Dyzpf4P",
-      "position": {
-        "units": "slots",
-        "x": -11,
-        "y": -2
-      },
-      "type": "xod/patch-nodes/not-implemented-in-xod"
-    },
-    {
-      "description": "Pulse on read.",
-      "id": "Sk4AG6M4w",
-      "label": "DONE",
-      "position": {
-        "units": "slots",
-        "x": -10,
-        "y": -1
+        "x": 4,
+        "y": 3
       },
       "type": "xod/patch-nodes/output-pulse"
+    },
+    {
+      "id": "HkKteicED",
+      "position": {
+        "units": "slots",
+        "x": 4,
+        "y": 2
+      },
+      "type": "@/soft-reset"
     },
     {
       "boundLiterals": {
         "__out__": "Continuously"
       },
       "description": "Update.",
-      "id": "SydWfaf4D",
+      "id": "Hy1DeicEv",
       "label": "UPD",
       "position": {
         "units": "slots",
-        "x": -10,
-        "y": -3
+        "x": 3,
+        "y": 0
       },
       "type": "xod/patch-nodes/input-pulse"
+    },
+    {
+      "description": "Reset. Triggers soft reset.",
+      "id": "S1z1-icVw",
+      "label": "RST",
+      "position": {
+        "units": "slots",
+        "x": 5,
+        "y": 0
+      },
+      "type": "xod/patch-nodes/input-pulse"
+    },
+    {
+      "id": "SJGQes9NP",
+      "position": {
+        "units": "slots",
+        "x": 2,
+        "y": 2
+      },
+      "type": "@/read-flow"
+    },
+    {
+      "id": "Sk0gljqEP",
+      "position": {
+        "units": "slots",
+        "x": 2,
+        "y": 1
+      },
+      "type": "@/sfm3x00-device"
+    },
+    {
+      "description": "Flow rate (standard litre per minute).",
+      "id": "SknHgsqVw",
+      "label": "SLM",
+      "position": {
+        "units": "slots",
+        "x": 2,
+        "y": 3
+      },
+      "type": "xod/patch-nodes/output-number"
     },
     {
       "boundLiterals": {
         "__out__": "40h"
       },
       "description": "I²C address of device.",
-      "id": "rytlGaMEw",
+      "id": "Sy0PlicNw",
       "label": "ADDR",
       "position": {
         "units": "slots",
-        "x": -11,
-        "y": -3
+        "x": 2,
+        "y": 0
       },
       "type": "xod/patch-nodes/input-byte"
+    },
+    {
+      "description": "Pulse on read.",
+      "id": "rkxnBliqEw",
+      "label": "DONE",
+      "position": {
+        "units": "slots",
+        "x": 3,
+        "y": 3
+      },
+      "type": "xod/patch-nodes/output-pulse"
     }
   ]
 }
