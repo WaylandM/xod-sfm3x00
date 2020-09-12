@@ -1,4 +1,5 @@
 {
+  "description": "Read flow rate (standard litre per minute).",
   "nodes": [
     {
       "description": "Pulse on read.",

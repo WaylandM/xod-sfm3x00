@@ -2,5 +2,5 @@
   "description": "Sensirion SFM3x00 series flow meter. Supported devices include SFM3200, SFM3300 and SFM3400. Wraps https://github.com/PubInv/SFM3X00.  This is a work in progress. I do not have the device so have not been able to perform any testing.",
   "license": "BSD-3-Clause License ",
   "name": "sfm3x00-flow-meter",
-  "version": "0.0.3"
+  "version": "0.0.4"
 }

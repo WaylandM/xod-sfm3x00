@@ -1,4 +1,5 @@
 {
+  "description": "Read gas flow rate and temperature of the sensor.",
   "nodes": [
     {
       "description": "Flow rate (standard litre per minute).",
