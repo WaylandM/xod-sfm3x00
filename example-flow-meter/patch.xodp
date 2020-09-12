@@ -1,5 +1,5 @@
 {
-  "description": "Patch to test sfm3x00-flow-meter. Run in debug mode.",
+  "description": "Patch to test sfm3x00-flow-meter. The sfm3x00-flow-meter can be reset by sending a pulse to the RST input. Run in debug mode and use the tweak node to send a pulse to the RST input.",
   "links": [
     {
       "id": "BJmbbjqVP",

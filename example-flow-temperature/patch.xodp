@@ -1,4 +1,5 @@
 {
+  "description": "Patch to test reading of flow and temperature. Run in debug mode.",
   "links": [
     {
       "id": "B1kxPa5VD",
