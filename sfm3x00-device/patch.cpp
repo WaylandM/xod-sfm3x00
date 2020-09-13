@@ -1,5 +1,5 @@
 // Tell XOD where it could download the library:
-#pragma XOD require "https://github.com/PubInv/SFM3X00"
+#pragma XOD require "https://github.com/WaylandM/MTW-SFM3X00"
 
 //Include C++ libraries
 #include <Wire.h>

@@ -1,0 +1,72 @@
+{
+  "description": "Request offset and scale factor.",
+  "nodes": [
+    {
+      "boundLiterals": {
+        "__out__": "On Boot"
+      },
+      "description": "Update.",
+      "id": "BkCiJvsVD",
+      "label": "UPD",
+      "position": {
+        "units": "slots",
+        "x": 2,
+        "y": 0
+      },
+      "type": "xod/patch-nodes/input-pulse"
+    },
+    {
+      "id": "By9FyPiEP",
+      "position": {
+        "units": "slots",
+        "x": 1,
+        "y": 1
+      },
+      "type": "xod/patch-nodes/not-implemented-in-xod"
+    },
+    {
+      "description": "A SFM3x00 device.",
+      "id": "SkS51viNv",
+      "label": "DEV",
+      "position": {
+        "units": "slots",
+        "x": 1,
+        "y": 0
+      },
+      "type": "@/input-sfm3x00-device"
+    },
+    {
+      "description": "Scale factor.",
+      "id": "r1dpkDi4D",
+      "label": "Scale",
+      "position": {
+        "units": "slots",
+        "x": 2,
+        "y": 2
+      },
+      "type": "xod/patch-nodes/output-number"
+    },
+    {
+      "description": "Offset.",
+      "id": "rJ4aJwoVD",
+      "label": "Offset",
+      "position": {
+        "units": "slots",
+        "x": 1,
+        "y": 2
+      },
+      "type": "xod/patch-nodes/output-number"
+    },
+    {
+      "description": "Pulse on read.",
+      "id": "rkapkPsNv",
+      "label": "DONE",
+      "position": {
+        "units": "slots",
+        "x": 3,
+        "y": 2
+      },
+      "type": "xod/patch-nodes/output-pulse"
+    }
+  ]
+}
