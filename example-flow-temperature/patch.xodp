@@ -13,6 +13,17 @@
       }
     },
     {
+      "id": "BJa9_VXBP",
+      "input": {
+        "nodeId": "S1S0LpcNw",
+        "pinKey": "BknL_NmBP"
+      },
+      "output": {
+        "nodeId": "SJYcuV7SD",
+        "pinKey": "ByfGSDjQE"
+      }
+    },
+    {
       "id": "H10JP6qEP",
       "input": {
         "nodeId": "SJcywTqVw",
@@ -98,6 +109,15 @@
         "width": 2
       },
       "type": "xod/debug/watch"
+    },
+    {
+      "id": "SJYcuV7SD",
+      "position": {
+        "units": "slots",
+        "x": 2,
+        "y": 0
+      },
+      "type": "xod/debug/tweak-number"
     },
     {
       "id": "SJcywTqVw",

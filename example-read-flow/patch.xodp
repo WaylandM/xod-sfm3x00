@@ -35,6 +35,17 @@
       }
     },
     {
+      "id": "SJVhuVQHP",
+      "input": {
+        "nodeId": "H1XF_a9Nw",
+        "pinKey": "SkyX_4mSD"
+      },
+      "output": {
+        "nodeId": "SkW3O4Qrv",
+        "pinKey": "ByfGSDjQE"
+      }
+    },
+    {
       "id": "rJvT_TcNw",
       "input": {
         "nodeId": "HJLq_6q4P",
@@ -78,6 +89,15 @@
         "y": 2
       },
       "type": "xod/core/count"
+    },
+    {
+      "id": "SkW3O4Qrv",
+      "position": {
+        "units": "slots",
+        "x": 2,
+        "y": 0
+      },
+      "type": "xod/debug/tweak-number"
     },
     {
       "id": "SkpYda9ND",

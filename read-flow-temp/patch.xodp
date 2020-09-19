@@ -13,6 +13,17 @@
       "type": "xod/patch-nodes/output-number"
     },
     {
+      "description": "Flow error (standard litre per minute).",
+      "id": "BknL_NmBP",
+      "label": "FErr",
+      "position": {
+        "units": "slots",
+        "x": 1,
+        "y": 0
+      },
+      "type": "xod/patch-nodes/input-number"
+    },
+    {
       "description": "Pulse on read.",
       "id": "Bym9ima9VP",
       "label": "DONE",
@@ -63,7 +74,7 @@
       "label": "UPD",
       "position": {
         "units": "slots",
-        "x": 1,
+        "x": 2,
         "y": 0
       },
       "type": "xod/patch-nodes/input-pulse"

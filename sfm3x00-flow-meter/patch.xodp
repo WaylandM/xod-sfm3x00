@@ -88,9 +88,31 @@
         "nodeId": "Sk0gljqEP",
         "pinKey": "SkkfLc5ED"
       }
+    },
+    {
+      "id": "ryQu_Vmrv",
+      "input": {
+        "nodeId": "SJGQes9NP",
+        "pinKey": "SkyX_4mSD"
+      },
+      "output": {
+        "nodeId": "B1Jd_4XrP",
+        "pinKey": "__out__"
+      }
     }
   ],
   "nodes": [
+    {
+      "description": "Flow error (standard litre per minute).",
+      "id": "B1Jd_4XrP",
+      "label": "FErr",
+      "position": {
+        "units": "slots",
+        "x": 3,
+        "y": 0
+      },
+      "type": "xod/patch-nodes/input-number"
+    },
     {
       "description": "Pulse on soft reset.",
       "id": "B1_VLT54v",
@@ -120,7 +142,7 @@
       "label": "UPD",
       "position": {
         "units": "slots",
-        "x": 3,
+        "x": 4,
         "y": 0
       },
       "type": "xod/patch-nodes/input-pulse"

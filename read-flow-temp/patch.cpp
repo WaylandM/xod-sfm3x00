@@ -10,7 +10,7 @@ node {
 
 
         sensor->startContinuousMeasurement();
-        emitValue<output_SLM>(ctx, sensor->readFlow());
+        emitValue<output_SLM>(ctx, sensor->readFlow() - getValue<input_FErr>(ctx));
 
         sensor->sendCommand(START_TEMPERATURE_MEASUREMENT);
         emitValue<output_T_raw>(ctx, sensor->readData());
