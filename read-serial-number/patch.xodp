@@ -1,0 +1,36 @@
+{
+  "description": "Read serial number of SFM3x00 device.",
+  "nodes": [
+    {
+      "description": "Serial number.",
+      "id": "H1Wyijhqcw",
+      "label": "SN",
+      "position": {
+        "units": "slots",
+        "x": 0,
+        "y": 2
+      },
+      "type": "xod/patch-nodes/output-number"
+    },
+    {
+      "description": "A SFM3x00 device.",
+      "id": "HkxJjin5cD",
+      "label": "DEV",
+      "position": {
+        "units": "slots",
+        "x": 0,
+        "y": 0
+      },
+      "type": "@/input-sfm3x00-device"
+    },
+    {
+      "id": "Hyyji39qP",
+      "position": {
+        "units": "slots",
+        "x": 0,
+        "y": 1
+      },
+      "type": "xod/patch-nodes/not-implemented-in-xod"
+    }
+  ]
+}

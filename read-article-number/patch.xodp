@@ -1,0 +1,36 @@
+{
+  "description": "Read article number of SFM3x00 device.",
+  "nodes": [
+    {
+      "id": "Byhfu2q5D",
+      "position": {
+        "units": "slots",
+        "x": 1,
+        "y": 1
+      },
+      "type": "xod/patch-nodes/not-implemented-in-xod"
+    },
+    {
+      "description": "Article number.",
+      "id": "S1kf9hqcD",
+      "label": "ART",
+      "position": {
+        "units": "slots",
+        "x": 1,
+        "y": 2
+      },
+      "type": "xod/patch-nodes/output-number"
+    },
+    {
+      "description": "A SFM3x00 device.",
+      "id": "rJ-m_hcqw",
+      "label": "DEV",
+      "position": {
+        "units": "slots",
+        "x": 1,
+        "y": 0
+      },
+      "type": "@/input-sfm3x00-device"
+    }
+  ]
+}

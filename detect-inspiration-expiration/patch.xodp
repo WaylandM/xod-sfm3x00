@@ -1,0 +1,233 @@
+{
+  "links": [
+    {
+      "id": "BJGMokjqv",
+      "input": {
+        "nodeId": "ry9Jsyscw",
+        "pinKey": "rJg00Nhe-"
+      },
+      "output": {
+        "nodeId": "rJi35Js9P",
+        "pinKey": "rJku5Jj5P"
+      }
+    },
+    {
+      "id": "BJjNh1i5w",
+      "input": {
+        "nodeId": "rk1Xn1jcv",
+        "pinKey": "HJjZLRdBw1-"
+      },
+      "output": {
+        "nodeId": "rJi35Js9P",
+        "pinKey": "rJku5Jj5P"
+      }
+    },
+    {
+      "id": "H1awMbiqP",
+      "input": {
+        "nodeId": "rJdLhJo9D",
+        "pinKey": "__in__"
+      },
+      "output": {
+        "nodeId": "rk1Xn1jcv",
+        "pinKey": "HktZUCdrPkZ"
+      }
+    },
+    {
+      "id": "H1y_MZsqw",
+      "input": {
+        "nodeId": "r1Wvjko5v",
+        "pinKey": "__in__"
+      },
+      "output": {
+        "nodeId": "ry9Jsyscw",
+        "pinKey": "B19RYS3lW"
+      }
+    },
+    {
+      "id": "HkE6Gbi5D",
+      "input": {
+        "nodeId": "S1Itski5P",
+        "pinKey": "__in__"
+      },
+      "output": {
+        "nodeId": "r1Wvjko5v",
+        "pinKey": "__out__"
+      }
+    },
+    {
+      "id": "HkjMCqJi5w",
+      "input": {
+        "nodeId": "rJi35Js9P",
+        "pinKey": "S1qUKysqw"
+      },
+      "output": {
+        "nodeId": "Hyd6qkscv",
+        "pinKey": "__out__"
+      }
+    },
+    {
+      "id": "S1C72ki9D",
+      "input": {
+        "nodeId": "rk1Xn1jcv",
+        "pinKey": "SJqZ8COrDkW"
+      },
+      "output": {
+        "nodeId": "Sk4WnJscv",
+        "pinKey": "__out__"
+      }
+    },
+    {
+      "id": "r18Onksqw",
+      "input": {
+        "nodeId": "H1Vv2yi9v",
+        "pinKey": "__in__"
+      },
+      "output": {
+        "nodeId": "rJdLhJo9D",
+        "pinKey": "__out__"
+      }
+    },
+    {
+      "id": "rJsZjyi9w",
+      "input": {
+        "nodeId": "ry9Jsyscw",
+        "pinKey": "HJbACN3gb"
+      },
+      "output": {
+        "nodeId": "rJPljyo9w",
+        "pinKey": "__out__"
+      }
+    },
+    {
+      "id": "rJza9yo5P",
+      "input": {
+        "nodeId": "rJi35Js9P",
+        "pinKey": "HJZ4FJiqD"
+      },
+      "output": {
+        "nodeId": "Bk7o51o9w",
+        "pinKey": "__out__"
+      }
+    }
+  ],
+  "nodes": [
+    {
+      "description": "Flow rate (SLM).",
+      "id": "Bk7o51o9w",
+      "label": "FLOW",
+      "position": {
+        "units": "slots",
+        "x": 1,
+        "y": -3
+      },
+      "type": "xod/patch-nodes/input-number"
+    },
+    {
+      "description": "Pulse on start of expiration.",
+      "id": "H1Vv2yi9v",
+      "label": "EXP",
+      "position": {
+        "units": "slots",
+        "x": 4,
+        "y": 1
+      },
+      "type": "xod/patch-nodes/output-pulse"
+    },
+    {
+      "description": "Update.",
+      "id": "Hyd6qkscv",
+      "label": "UPD",
+      "position": {
+        "units": "slots",
+        "x": 9,
+        "y": -3
+      },
+      "type": "xod/patch-nodes/input-pulse"
+    },
+    {
+      "description": "Pulse on start of inspiration.",
+      "id": "S1Itski5P",
+      "label": "INS",
+      "position": {
+        "units": "slots",
+        "x": 1,
+        "y": 1
+      },
+      "type": "xod/patch-nodes/output-pulse"
+    },
+    {
+      "boundLiterals": {
+        "__out__": "-5"
+      },
+      "description": "Expiratory threshold (SLM).",
+      "id": "Sk4WnJscv",
+      "label": "ET",
+      "position": {
+        "units": "slots",
+        "x": 5,
+        "y": -3
+      },
+      "type": "xod/patch-nodes/input-number"
+    },
+    {
+      "id": "r1Wvjko5v",
+      "position": {
+        "units": "slots",
+        "x": 1,
+        "y": 0
+      },
+      "type": "xod/core/pulse-on-true"
+    },
+    {
+      "boundLiterals": {
+        "__out__": "5"
+      },
+      "description": "Inspiratory threshold (SLM).",
+      "id": "rJPljyo9w",
+      "label": "IT",
+      "position": {
+        "units": "slots",
+        "x": 4,
+        "y": -3
+      },
+      "type": "xod/patch-nodes/input-number"
+    },
+    {
+      "id": "rJdLhJo9D",
+      "position": {
+        "units": "slots",
+        "x": 4,
+        "y": 0
+      },
+      "type": "xod/core/pulse-on-true"
+    },
+    {
+      "id": "rJi35Js9P",
+      "position": {
+        "units": "slots",
+        "x": 1,
+        "y": -2
+      },
+      "type": "@/moving-average-3"
+    },
+    {
+      "id": "rk1Xn1jcv",
+      "position": {
+        "units": "slots",
+        "x": 4,
+        "y": -1
+      },
+      "type": "xod/core/less"
+    },
+    {
+      "id": "ry9Jsyscw",
+      "position": {
+        "units": "slots",
+        "x": 1,
+        "y": -1
+      },
+      "type": "xod/core/greater"
+    }
+  ]
+}
