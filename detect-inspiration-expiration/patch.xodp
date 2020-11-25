@@ -140,7 +140,7 @@
       "label": "UPD",
       "position": {
         "units": "slots",
-        "x": 9,
+        "x": 7,
         "y": -3
       },
       "type": "xod/patch-nodes/input-pulse"

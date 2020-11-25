@@ -1,17 +1,6 @@
 {
   "links": [
     {
-      "id": "BJIJjlo5D",
-      "input": {
-        "nodeId": "B1Z1oxiqD",
-        "pinKey": "HJAq-A_8-"
-      },
-      "output": {
-        "nodeId": "Hy4Aqli9v",
-        "pinKey": "rJfN59eicv"
-      }
-    },
-    {
       "id": "BJlgxgs9D",
       "input": {
         "nodeId": "BJm1xesqP",
@@ -45,28 +34,6 @@
       }
     },
     {
-      "id": "HJwR9gscv",
-      "input": {
-        "nodeId": "Hy4Aqli9v",
-        "pinKey": "SJ4ccxj5P"
-      },
-      "output": {
-        "nodeId": "Syl61gocv",
-        "pinKey": "SknHgsqVw"
-      }
-    },
-    {
-      "id": "S1YAqxs9w",
-      "input": {
-        "nodeId": "Hy4Aqli9v",
-        "pinKey": "By-N55xjqP"
-      },
-      "output": {
-        "nodeId": "Syl61gocv",
-        "pinKey": "rkxnBliqEw"
-      }
-    },
-    {
       "id": "Sysexgi9P",
       "input": {
         "nodeId": "ryKxggscP",
@@ -74,17 +41,6 @@
       },
       "output": {
         "nodeId": "By6yges9P",
-        "pinKey": "r1yhZRd8W"
-      }
-    },
-    {
-      "id": "r1WW1ogjcv",
-      "input": {
-        "nodeId": "H1l-yjlicv",
-        "pinKey": "HkXK-dGob"
-      },
-      "output": {
-        "nodeId": "B1Z1oxiqD",
         "pinKey": "r1yhZRd8W"
       }
     },
@@ -123,15 +79,6 @@
     }
   ],
   "nodes": [
-    {
-      "id": "B1Z1oxiqD",
-      "position": {
-        "units": "slots",
-        "x": 13,
-        "y": 3
-      },
-      "type": "xod/core/count"
-    },
     {
       "id": "BJbZUejqw",
       "position": {
@@ -172,29 +119,6 @@
         "y": 2
       },
       "type": "@/detect-inspiration-expiration"
-    },
-    {
-      "id": "H1l-yjlicv",
-      "position": {
-        "units": "slots",
-        "x": 13,
-        "y": 4
-      },
-      "size": {
-        "height": 1,
-        "units": "slots",
-        "width": 2
-      },
-      "type": "xod/debug/watch"
-    },
-    {
-      "id": "Hy4Aqli9v",
-      "position": {
-        "units": "slots",
-        "x": 14,
-        "y": 2
-      },
-      "type": "@/detect-inspiration"
     },
     {
       "id": "Syl61gocv",
