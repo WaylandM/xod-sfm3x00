@@ -1,2 +1,86 @@
 {
+  "links": [
+    {
+      "id": "HkdQH2Tcw",
+      "input": {
+        "nodeId": "HyibSnpcw",
+        "pinKey": "Bk7o51o9w"
+      },
+      "output": {
+        "nodeId": "HkC-B26qD",
+        "pinKey": "H1_AF9qVD"
+      }
+    },
+    {
+      "id": "rJMGBnpcv",
+      "input": {
+        "nodeId": "HkC-B26qD",
+        "pinKey": "H175K5cEw"
+      },
+      "output": {
+        "nodeId": "HJM-r3TcP",
+        "pinKey": "SkkfLc5ED"
+      }
+    },
+    {
+      "id": "rJS7B3p5w",
+      "input": {
+        "nodeId": "BJSgB2acw",
+        "pinKey": "rJkqrfnqP"
+      },
+      "output": {
+        "nodeId": "HyibSnpcw",
+        "pinKey": "S1Itski5P"
+      }
+    },
+    {
+      "id": "ryxQSnT9v",
+      "input": {
+        "nodeId": "HyibSnpcw",
+        "pinKey": "Hyd6qkscv"
+      },
+      "output": {
+        "nodeId": "HkC-B26qD",
+        "pinKey": "B1gs9c5Nw"
+      }
+    }
+  ],
+  "nodes": [
+    {
+      "id": "BJSgB2acw",
+      "position": {
+        "units": "slots",
+        "x": 3,
+        "y": 4
+      },
+      "type": "@/calc-resp-rate"
+    },
+    {
+      "id": "HJM-r3TcP",
+      "position": {
+        "units": "slots",
+        "x": 4,
+        "y": 1
+      },
+      "type": "@/sfm3x00-device"
+    },
+    {
+      "id": "HkC-B26qD",
+      "position": {
+        "units": "slots",
+        "x": 4,
+        "y": 2
+      },
+      "type": "@/read-flow"
+    },
+    {
+      "id": "HyibSnpcw",
+      "position": {
+        "units": "slots",
+        "x": 3,
+        "y": 3
+      },
+      "type": "@/detect-inspiration-expiration"
+    }
+  ]
 }
