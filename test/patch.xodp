@@ -1,44 +1,57 @@
 {
   "links": [
     {
-      "id": "B1awoRjqD",
+      "id": "BkWbVFtiv",
       "input": {
-        "nodeId": "r1fPiCjcv",
-        "pinKey": "BJlHojaWZ"
+        "nodeId": "SJ0n2wFsv",
+        "pinKey": "rkUt0PKoD"
       },
       "output": {
-        "nodeId": "HyS4o0icw",
-        "pinKey": "BJMlTDdJM"
+        "nodeId": "SJyZEFYoD",
+        "pinKey": "Bkf4BDsmV"
       }
     },
     {
-      "id": "SJ1ds0s5w",
+      "id": "Hypa2vYsv",
       "input": {
-        "nodeId": "Sk64iCj5v",
+        "nodeId": "SJ0n2wFsv",
+        "pinKey": "Sy4XqvYsP"
+      },
+      "output": {
+        "nodeId": "rJFpnDKiv",
+        "pinKey": "ByfGSDjQE"
+      }
+    },
+    {
+      "id": "r1jA2DFsw",
+      "input": {
+        "nodeId": "BkHR2DKsw",
         "pinKey": "HkXK-dGob"
       },
       "output": {
-        "nodeId": "r1fPiCjcv",
-        "pinKey": "r1H_oipZb"
+        "nodeId": "SJ0n2wFsv",
+        "pinKey": "rJAOcvYsD"
+      }
+    },
+    {
+      "id": "rJF03wYsD",
+      "input": {
+        "nodeId": "SJkAnPFiD",
+        "pinKey": "HkXK-dGob"
+      },
+      "output": {
+        "nodeId": "SJ0n2wFsv",
+        "pinKey": "S1mw9DYiw"
       }
     }
   ],
   "nodes": [
     {
-      "id": "HyS4o0icw",
+      "id": "BkHR2DKsw",
       "position": {
         "units": "slots",
-        "x": 3,
-        "y": 2
-      },
-      "type": "xod/core/timer"
-    },
-    {
-      "id": "Sk64iCj5v",
-      "position": {
-        "units": "slots",
-        "x": 3,
-        "y": 4
+        "x": 10,
+        "y": 6
       },
       "size": {
         "height": 1,
@@ -48,13 +61,48 @@
       "type": "xod/debug/watch"
     },
     {
-      "id": "r1fPiCjcv",
+      "id": "SJ0n2wFsv",
       "position": {
         "units": "slots",
-        "x": 3,
-        "y": 3
+        "x": 8,
+        "y": 5
       },
-      "type": "xod/core/format-number"
+      "type": "@/store-max-min"
+    },
+    {
+      "id": "SJkAnPFiD",
+      "position": {
+        "units": "slots",
+        "x": 7,
+        "y": 6
+      },
+      "size": {
+        "height": 1,
+        "units": "slots",
+        "width": 2
+      },
+      "type": "xod/debug/watch"
+    },
+    {
+      "id": "SJyZEFYoD",
+      "position": {
+        "units": "slots",
+        "x": 10,
+        "y": 4
+      },
+      "type": "xod/debug/tweak-pulse"
+    },
+    {
+      "boundLiterals": {
+        "ByfGSDjQE": "-8"
+      },
+      "id": "rJFpnDKiv",
+      "position": {
+        "units": "slots",
+        "x": 8,
+        "y": 4
+      },
+      "type": "xod/debug/tweak-number"
     }
   ]
 }
