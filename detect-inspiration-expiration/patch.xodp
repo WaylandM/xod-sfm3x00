@@ -1,4 +1,5 @@
 {
+  "description": "Detect inspiration/expiration based on increase in flow beyond a user defined threshold.",
   "links": [
     {
       "id": "BJGMokjqv",
@@ -160,7 +161,7 @@
       "boundLiterals": {
         "__out__": "-5"
       },
-      "description": "Expiratory threshold (SLM).",
+      "description": "Expiratory threshold (SLM). N.B. expiratory flow is negative.",
       "id": "Sk4WnJscv",
       "label": "ET",
       "position": {

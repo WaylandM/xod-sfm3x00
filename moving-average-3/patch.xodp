@@ -1,4 +1,5 @@
 {
+  "description": "Calculates unweighted mean of the last three values.",
   "links": [
     {
       "id": "B1MbQeiqw",
@@ -216,6 +217,7 @@
       "type": "xod/core/buffer"
     },
     {
+      "description": "Moving average.",
       "id": "rJku5Jj5P",
       "label": "AVG",
       "position": {

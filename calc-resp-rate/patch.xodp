@@ -1,5 +1,5 @@
 {
-  "description": "Respiratory rate (breaths/minute).",
+  "description": "Calculate respiratory rate (breaths/minute) by measuring interval between breaths.",
   "links": [
     {
       "id": "BJbM3AoqD",
@@ -120,6 +120,7 @@
       "type": "xod/core/divide"
     },
     {
+      "description": "Respiratory rate (breaths/minute).",
       "id": "r1rKvzhcw",
       "label": "RR",
       "position": {
