@@ -1,6 +1,17 @@
 {
   "links": [
     {
+      "id": "B1LOM_9iD",
+      "input": {
+        "nodeId": "SJ0n2wFsv",
+        "pinKey": "SyXNAtYjv"
+      },
+      "output": {
+        "nodeId": "Skm_M_5sv",
+        "pinKey": "Bkf4BDsmV"
+      }
+    },
+    {
       "id": "BkWbVFtiv",
       "input": {
         "nodeId": "SJ0n2wFsv",
@@ -67,7 +78,7 @@
         "x": 8,
         "y": 5
       },
-      "type": "@/store-max-min"
+      "type": "@/record-max-flows"
     },
     {
       "id": "SJkAnPFiD",
@@ -93,8 +104,17 @@
       "type": "xod/debug/tweak-pulse"
     },
     {
+      "id": "Skm_M_5sv",
+      "position": {
+        "units": "slots",
+        "x": 9,
+        "y": 4
+      },
+      "type": "xod/debug/tweak-pulse"
+    },
+    {
       "boundLiterals": {
-        "ByfGSDjQE": "-8"
+        "ByfGSDjQE": "10"
       },
       "id": "rJFpnDKiv",
       "position": {

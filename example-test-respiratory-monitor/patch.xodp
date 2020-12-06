@@ -1,0 +1,238 @@
+{
+  "links": [
+    {
+      "id": "BkZEL99jw",
+      "input": {
+        "nodeId": "Byx1I59jP",
+        "pinKey": "HkXK-dGob"
+      },
+      "output": {
+        "nodeId": "HkTrr5cow",
+        "pinKey": "BkvfJKqoD"
+      }
+    },
+    {
+      "id": "By6AB5qjw",
+      "input": {
+        "nodeId": "ryYASqqiw",
+        "pinKey": "HkXK-dGob"
+      },
+      "output": {
+        "nodeId": "HkTrr5cow",
+        "pinKey": "SkJQkqciP"
+      }
+    },
+    {
+      "id": "H1IELccsv",
+      "input": {
+        "nodeId": "rJ3XyLcqsD",
+        "pinKey": "HkXK-dGob"
+      },
+      "output": {
+        "nodeId": "HkTrr5cow",
+        "pinKey": "ryu_lq9iw"
+      }
+    },
+    {
+      "id": "HkJZUcqov",
+      "input": {
+        "nodeId": "HkhxI9qiw",
+        "pinKey": "HkXK-dGob"
+      },
+      "output": {
+        "nodeId": "BJ7g855ow",
+        "pinKey": "r1yhZRd8W"
+      }
+    },
+    {
+      "id": "SJ1kIoqjD",
+      "input": {
+        "nodeId": "HkTrr5cow",
+        "pinKey": "rk7xltciD"
+      },
+      "output": {
+        "nodeId": "rycCBs5ov",
+        "pinKey": "HJU8CE2lW"
+      }
+    },
+    {
+      "id": "SJN4L5csv",
+      "input": {
+        "nodeId": "H17yIcqsw",
+        "pinKey": "HkXK-dGob"
+      },
+      "output": {
+        "nodeId": "HkTrr5cow",
+        "pinKey": "BkCLg9ciw"
+      }
+    },
+    {
+      "id": "Skm489qsD",
+      "input": {
+        "nodeId": "B1MkIccow",
+        "pinKey": "HkXK-dGob"
+      },
+      "output": {
+        "nodeId": "HkTrr5cow",
+        "pinKey": "SJmPycciD"
+      }
+    },
+    {
+      "id": "SyzVI55iv",
+      "input": {
+        "nodeId": "rkbJLq9sv",
+        "pinKey": "HkXK-dGob"
+      },
+      "output": {
+        "nodeId": "HkTrr5cow",
+        "pinKey": "H1zP7q9ov"
+      }
+    },
+    {
+      "id": "r1VCrc9sw",
+      "input": {
+        "nodeId": "HkTrr5cow",
+        "pinKey": "H1SQzq5sP"
+      },
+      "output": {
+        "nodeId": "SkRarcqsP",
+        "pinKey": "Bkf4BDsmV"
+      }
+    },
+    {
+      "id": "rJ1TBq5jD",
+      "input": {
+        "nodeId": "HkTrr5cow",
+        "pinKey": "Hy5beFcsw"
+      },
+      "output": {
+        "nodeId": "Bks2Sc9sP",
+        "pinKey": "Bkf4BDsmV"
+      }
+    },
+    {
+      "id": "ryYeL5cjw",
+      "input": {
+        "nodeId": "BJ7g855ow",
+        "pinKey": "HJAq-A_8-"
+      },
+      "output": {
+        "nodeId": "HkTrr5cow",
+        "pinKey": "ByYO-99iD"
+      }
+    }
+  ],
+  "nodes": [
+    {
+      "id": "B1MkIccow",
+      "position": {
+        "units": "slots",
+        "x": 8,
+        "y": 4
+      },
+      "type": "xod/debug/watch"
+    },
+    {
+      "id": "BJ7g855ow",
+      "position": {
+        "units": "slots",
+        "x": 11,
+        "y": 4
+      },
+      "type": "xod/core/count"
+    },
+    {
+      "id": "Bks2Sc9sP",
+      "position": {
+        "units": "slots",
+        "x": 8,
+        "y": 2
+      },
+      "type": "xod/debug/tweak-pulse"
+    },
+    {
+      "id": "Byx1I59jP",
+      "position": {
+        "units": "slots",
+        "x": 6,
+        "y": 4
+      },
+      "type": "xod/debug/watch"
+    },
+    {
+      "id": "H17yIcqsw",
+      "position": {
+        "units": "slots",
+        "x": 9,
+        "y": 4
+      },
+      "type": "xod/debug/watch"
+    },
+    {
+      "id": "HkTrr5cow",
+      "position": {
+        "units": "slots",
+        "x": 5,
+        "y": 3
+      },
+      "type": "@/respiratory-monitor"
+    },
+    {
+      "id": "HkhxI9qiw",
+      "position": {
+        "units": "slots",
+        "x": 11,
+        "y": 5
+      },
+      "type": "xod/debug/watch"
+    },
+    {
+      "id": "SkRarcqsP",
+      "position": {
+        "units": "slots",
+        "x": 9,
+        "y": 2
+      },
+      "type": "xod/debug/tweak-pulse"
+    },
+    {
+      "id": "rJ3XyLcqsD",
+      "position": {
+        "units": "slots",
+        "x": 10,
+        "y": 4
+      },
+      "type": "xod/debug/watch"
+    },
+    {
+      "id": "rkbJLq9sv",
+      "position": {
+        "units": "slots",
+        "x": 7,
+        "y": 4
+      },
+      "type": "xod/debug/watch"
+    },
+    {
+      "id": "ryYASqqiw",
+      "position": {
+        "units": "slots",
+        "x": 5,
+        "y": 4
+      },
+      "type": "xod/debug/watch"
+    },
+    {
+      "boundLiterals": {
+        "B13SCNhl-": "0.01"
+      },
+      "id": "rycCBs5ov",
+      "position": {
+        "units": "slots",
+        "x": 10,
+        "y": 2
+      },
+      "type": "xod/core/clock"
+    }
+  ]
+}

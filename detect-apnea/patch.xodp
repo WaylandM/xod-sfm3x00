@@ -1,0 +1,133 @@
+{
+  "description": "Node to detect cessation of ventilation.",
+  "links": [
+    {
+      "id": "SJBfRct5sw",
+      "input": {
+        "nodeId": "HyeGA5Y5ov",
+        "pinKey": "rJg00Nhe-"
+      },
+      "output": {
+        "nodeId": "Syz05tqoP",
+        "pinKey": "BJMlTDdJM"
+      }
+    },
+    {
+      "id": "SJYfCcF5iD",
+      "input": {
+        "nodeId": "HyeGA5Y5ov",
+        "pinKey": "HJbACN3gb"
+      },
+      "output": {
+        "nodeId": "HyNMCcK9jv",
+        "pinKey": "__out__"
+      }
+    },
+    {
+      "id": "SkwzR9FqiP",
+      "input": {
+        "nodeId": "Syz05tqoP",
+        "pinKey": "HJF16v_kz"
+      },
+      "output": {
+        "nodeId": "ryzz0qK5iD",
+        "pinKey": "__out__"
+      }
+    },
+    {
+      "id": "rk8zA9YqjP",
+      "input": {
+        "nodeId": "rkZf05Y9sD",
+        "pinKey": "__in__"
+      },
+      "output": {
+        "nodeId": "HyeGA5Y5ov",
+        "pinKey": "B19RYS3lW"
+      }
+    },
+    {
+      "id": "rkOGRqt9ov",
+      "input": {
+        "nodeId": "Syz05tqoP",
+        "pinKey": "r1W1Tw_yz"
+      },
+      "output": {
+        "nodeId": "SJ7M09F9jv",
+        "pinKey": "__out__"
+      }
+    }
+  ],
+  "nodes": [
+    {
+      "boundLiterals": {
+        "__out__": "10"
+      },
+      "description": "Period of time to wait for a breath before reporting apnea (setting APN output to TRUE).",
+      "id": "HyNMCcK9jv",
+      "label": "WAIT",
+      "position": {
+        "units": "slots",
+        "x": 3,
+        "y": 0
+      },
+      "type": "xod/patch-nodes/input-number"
+    },
+    {
+      "boundLiterals": {
+        "HJbACN3gb": "10"
+      },
+      "id": "HyeGA5Y5ov",
+      "position": {
+        "units": "slots",
+        "x": 2,
+        "y": 2
+      },
+      "type": "xod/core/greater"
+    },
+    {
+      "boundLiterals": {
+        "__out__": "True"
+      },
+      "description": "Enable detector.",
+      "id": "SJ7M09F9jv",
+      "label": "EN",
+      "position": {
+        "units": "slots",
+        "x": 0,
+        "y": 0
+      },
+      "type": "xod/patch-nodes/input-boolean"
+    },
+    {
+      "id": "Syz05tqoP",
+      "position": {
+        "units": "slots",
+        "x": 0,
+        "y": 1
+      },
+      "type": "xod/core/timer"
+    },
+    {
+      "description": "Apnea detected.",
+      "id": "rkZf05Y9sD",
+      "label": "APN",
+      "position": {
+        "units": "slots",
+        "x": 2,
+        "y": 3
+      },
+      "type": "xod/patch-nodes/output-boolean"
+    },
+    {
+      "description": "Each breath is represented by a single input pulse. Connect to an output node of either the detect-inspiration node or detect-inspiration-expiration node.",
+      "id": "ryzz0qK5iD",
+      "label": "Breath",
+      "position": {
+        "units": "slots",
+        "x": 1,
+        "y": 0
+      },
+      "type": "xod/patch-nodes/input-pulse"
+    }
+  ]
+}

@@ -1,181 +1,508 @@
 {
+  "description": "Monitor ",
   "links": [
     {
-      "id": "Hk01YWyoD",
+      "id": "B19Cpcciw",
       "input": {
-        "nodeId": "Hyd1YW1iP",
-        "pinKey": "HJAq-A_8-"
+        "nodeId": "SytAT99jP",
+        "pinKey": "HJZ4FJiqD"
       },
       "output": {
-        "nodeId": "HyibSnpcw",
-        "pinKey": "S1Itski5P"
-      }
-    },
-    {
-      "id": "HkdQH2Tcw",
-      "input": {
-        "nodeId": "HyibSnpcw",
-        "pinKey": "Bk7o51o9w"
-      },
-      "output": {
-        "nodeId": "HkC-B26qD",
-        "pinKey": "H1_AF9qVD"
-      }
-    },
-    {
-      "id": "HyNxKZyiv",
-      "input": {
-        "nodeId": "rybgtZkow",
-        "pinKey": "HkXK-dGob"
-      },
-      "output": {
-        "nodeId": "Hyd1YW1iP",
-        "pinKey": "r1yhZRd8W"
-      }
-    },
-    {
-      "id": "r1hRO-JsP",
-      "input": {
-        "nodeId": "HJvAO-1oD",
-        "pinKey": "HkXK-dGob"
-      },
-      "output": {
-        "nodeId": "HkC-B26qD",
-        "pinKey": "H1_AF9qVD"
-      }
-    },
-    {
-      "id": "rJMGBnpcv",
-      "input": {
-        "nodeId": "HkC-B26qD",
-        "pinKey": "H175K5cEw"
-      },
-      "output": {
-        "nodeId": "HJM-r3TcP",
-        "pinKey": "SkkfLc5ED"
-      }
-    },
-    {
-      "id": "rJS7B3p5w",
-      "input": {
-        "nodeId": "BJSgB2acw",
-        "pinKey": "rJkqrfnqP"
-      },
-      "output": {
-        "nodeId": "HyibSnpcw",
-        "pinKey": "S1Itski5P"
-      }
-    },
-    {
-      "id": "rk60_Wkov",
-      "input": {
-        "nodeId": "Hk8p_bJiP",
-        "pinKey": "HkXK-dGob"
-      },
-      "output": {
-        "nodeId": "BJSgB2acw",
+        "nodeId": "BkuXi_9jv",
         "pinKey": "r1rKvzhcw"
       }
     },
     {
-      "id": "ryxQSnT9v",
+      "id": "BJy-xFcjD",
       "input": {
-        "nodeId": "HyibSnpcw",
+        "nodeId": "SkmzsOciv",
+        "pinKey": "Hy1DeicEv"
+      },
+      "output": {
+        "nodeId": "rk7xltciD",
+        "pinKey": "__out__"
+      }
+    },
+    {
+      "id": "BJyeVqciv",
+      "input": {
+        "nodeId": "S1Xik9qjD",
+        "pinKey": "HyNMCcK9jv"
+      },
+      "output": {
+        "nodeId": "HkzJEqcjv",
+        "pinKey": "__out__"
+      }
+    },
+    {
+      "id": "BkUCm5qiP",
+      "input": {
+        "nodeId": "HkbAQq9sD",
+        "pinKey": "__in__"
+      },
+      "output": {
+        "nodeId": "SkM3X5qsP",
+        "pinKey": "__out__"
+      }
+    },
+    {
+      "id": "BkWJzq9iD",
+      "input": {
+        "nodeId": "SJT0bqqoD",
+        "pinKey": "__in__"
+      },
+      "output": {
+        "nodeId": "Hy5beFcsw",
+        "pinKey": "__out__"
+      }
+    },
+    {
+      "id": "Bkh0699oP",
+      "input": {
+        "nodeId": "BkvfJKqoD",
+        "pinKey": "__in__"
+      },
+      "output": {
+        "nodeId": "SytAT99jP",
+        "pinKey": "rJku5Jj5P"
+      }
+    },
+    {
+      "id": "By3r_m99ov",
+      "input": {
+        "nodeId": "H1zP7q9ov",
+        "pinKey": "__in__"
+      },
+      "output": {
+        "nodeId": "S1Xik9qjD",
+        "pinKey": "rkZf05Y9sD"
+      }
+    },
+    {
+      "id": "ByKCkF5ow",
+      "input": {
+        "nodeId": "ByWmi_qoP",
+        "pinKey": "rJPljyo9w"
+      },
+      "output": {
+        "nodeId": "S1XFkY5sv",
+        "pinKey": "__out__"
+      }
+    },
+    {
+      "id": "H1JFecqiv",
+      "input": {
+        "nodeId": "ryu_lq9iw",
+        "pinKey": "__in__"
+      },
+      "output": {
+        "nodeId": "HkC4e95sP",
+        "pinKey": "S1mw9DYiw"
+      }
+    },
+    {
+      "id": "H1c7iO9iP",
+      "input": {
+        "nodeId": "BkuXi_9jv",
+        "pinKey": "rJkqrfnqP"
+      },
+      "output": {
+        "nodeId": "ByWmi_qoP",
+        "pinKey": "S1Itski5P"
+      }
+    },
+    {
+      "id": "H1cZkqqov",
+      "input": {
+        "nodeId": "ByWmi_qoP",
         "pinKey": "Hyd6qkscv"
       },
       "output": {
-        "nodeId": "HkC-B26qD",
-        "pinKey": "B1gs9c5Nw"
+        "nodeId": "SkmzsOciv",
+        "pinKey": "rkxnBliqEw"
+      }
+    },
+    {
+      "id": "H1oDGc5jP",
+      "input": {
+        "nodeId": "SkmzsOciv",
+        "pinKey": "S1z1-icVw"
+      },
+      "output": {
+        "nodeId": "H1SQzq5sP",
+        "pinKey": "__out__"
+      }
+    },
+    {
+      "id": "HyfIlc5jw",
+      "input": {
+        "nodeId": "HkC4e95sP",
+        "pinKey": "Sy4XqvYsP"
+      },
+      "output": {
+        "nodeId": "SkmzsOciv",
+        "pinKey": "SknHgsqVw"
+      }
+    },
+    {
+      "id": "HyxjbqqsD",
+      "input": {
+        "nodeId": "ByYO-99iD",
+        "pinKey": "__in__"
+      },
+      "output": {
+        "nodeId": "SkmzsOciv",
+        "pinKey": "rkxnBliqEw"
+      }
+    },
+    {
+      "id": "S1MUy9qov",
+      "input": {
+        "nodeId": "SkJQkqciP",
+        "pinKey": "__in__"
+      },
+      "output": {
+        "nodeId": "BkuXi_9jv",
+        "pinKey": "r1rKvzhcw"
+      }
+    },
+    {
+      "id": "SJQQoO9iP",
+      "input": {
+        "nodeId": "ByWmi_qoP",
+        "pinKey": "Bk7o51o9w"
+      },
+      "output": {
+        "nodeId": "SkmzsOciv",
+        "pinKey": "SknHgsqVw"
+      }
+    },
+    {
+      "id": "SJxex95sP",
+      "input": {
+        "nodeId": "S1Xik9qjD",
+        "pinKey": "ryzz0qK5iD"
+      },
+      "output": {
+        "nodeId": "ByWmi_qoP",
+        "pinKey": "S1Itski5P"
+      }
+    },
+    {
+      "id": "SkGWf5csP",
+      "input": {
+        "nodeId": "HkC4e95sP",
+        "pinKey": "rkUt0PKoD"
+      },
+      "output": {
+        "nodeId": "rJzeGcqoD",
+        "pinKey": "__out__"
+      }
+    },
+    {
+      "id": "SkP8xc9sP",
+      "input": {
+        "nodeId": "HkC4e95sP",
+        "pinKey": "SyXNAtYjv"
+      },
+      "output": {
+        "nodeId": "SkmzsOciv",
+        "pinKey": "rkxnBliqEw"
+      }
+    },
+    {
+      "id": "SyuDgcqjP",
+      "input": {
+        "nodeId": "BkCLg9ciw",
+        "pinKey": "__in__"
+      },
+      "output": {
+        "nodeId": "HkC4e95sP",
+        "pinKey": "rJAOcvYsD"
+      }
+    },
+    {
+      "id": "rJkylFciv",
+      "input": {
+        "nodeId": "ByWmi_qoP",
+        "pinKey": "Sk4WnJscv"
+      },
+      "output": {
+        "nodeId": "BJw31Kcsw",
+        "pinKey": "__out__"
+      }
+    },
+    {
+      "id": "ryRRp9coP",
+      "input": {
+        "nodeId": "SytAT99jP",
+        "pinKey": "S1qUKysqw"
+      },
+      "output": {
+        "nodeId": "ByWmi_qoP",
+        "pinKey": "S1Itski5P"
+      }
+    },
+    {
+      "id": "rywu1qqow",
+      "input": {
+        "nodeId": "SJmPycciD",
+        "pinKey": "__in__"
+      },
+      "output": {
+        "nodeId": "SkmzsOciv",
+        "pinKey": "SknHgsqVw"
       }
     }
   ],
   "nodes": [
     {
-      "id": "BJSgB2acw",
+      "boundLiterals": {
+        "__out__": "-5"
+      },
+      "description": "Expiratory threshold (SLM). N.B. expiratory flow is negative.",
+      "id": "BJw31Kcsw",
+      "label": "ET",
       "position": {
         "units": "slots",
-        "x": 3,
+        "x": 10,
+        "y": 1
+      },
+      "type": "xod/patch-nodes/input-number"
+    },
+    {
+      "description": "Largest inspiratory flow rate (SLM) recorded.",
+      "id": "BkCLg9ciw",
+      "label": "MaxI",
+      "position": {
+        "units": "slots",
+        "x": 13,
+        "y": 6
+      },
+      "type": "xod/patch-nodes/output-number"
+    },
+    {
+      "id": "BkuXi_9jv",
+      "position": {
+        "units": "slots",
+        "x": 6,
         "y": 4
       },
       "type": "@/calc-resp-rate"
     },
     {
-      "id": "HJM-r3TcP",
+      "description": "Smoothed respiratory rate (breaths per minute). Moving average of last three measurements.",
+      "id": "BkvfJKqoD",
+      "label": "SRR",
       "position": {
         "units": "slots",
-        "x": 4,
-        "y": 1
+        "x": 7,
+        "y": 6
       },
-      "type": "@/sfm3x00-device"
+      "type": "xod/patch-nodes/output-number"
     },
     {
-      "id": "HJvAO-1oD",
+      "id": "ByWmi_qoP",
       "position": {
         "units": "slots",
-        "x": 0,
-        "y": 5
-      },
-      "size": {
-        "height": 1,
-        "units": "slots",
-        "width": 2
-      },
-      "type": "xod/debug/watch"
-    },
-    {
-      "id": "Hk8p_bJiP",
-      "position": {
-        "units": "slots",
-        "x": 3,
-        "y": 5
-      },
-      "size": {
-        "height": 1,
-        "units": "slots",
-        "width": 2
-      },
-      "type": "xod/debug/watch"
-    },
-    {
-      "id": "HkC-B26qD",
-      "position": {
-        "units": "slots",
-        "x": 4,
-        "y": 2
-      },
-      "type": "@/read-flow"
-    },
-    {
-      "id": "Hyd1YW1iP",
-      "position": {
-        "units": "slots",
-        "x": 6,
-        "y": 4
-      },
-      "type": "xod/core/count"
-    },
-    {
-      "id": "HyibSnpcw",
-      "position": {
-        "units": "slots",
-        "x": 3,
+        "x": 8,
         "y": 3
       },
       "type": "@/detect-inspiration-expiration"
     },
     {
-      "id": "rybgtZkow",
+      "description": "Pulse on each measurement of flow rate.",
+      "id": "ByYO-99iD",
+      "label": "DONE",
+      "position": {
+        "units": "slots",
+        "x": 17,
+        "y": 6
+      },
+      "type": "xod/patch-nodes/output-pulse"
+    },
+    {
+      "description": "Reset flow meter. Triggers soft reset.",
+      "id": "H1SQzq5sP",
+      "label": "RST",
+      "position": {
+        "units": "slots",
+        "x": 14,
+        "y": 1
+      },
+      "type": "xod/patch-nodes/input-pulse"
+    },
+    {
+      "id": "H1zP7q9ov",
+      "label": "APN",
+      "position": {
+        "units": "slots",
+        "x": 9,
+        "y": 6
+      },
+      "type": "xod/patch-nodes/output-boolean"
+    },
+    {
+      "id": "HkC4e95sP",
+      "position": {
+        "units": "slots",
+        "x": 13,
+        "y": 5
+      },
+      "type": "@/record-max-flows"
+    },
+    {
+      "id": "HkbAQq9sD",
+      "label": "WAIT",
+      "position": {
+        "units": "slots",
+        "x": 11,
+        "y": 2
+      },
+      "type": "xod/patch-nodes/to-bus"
+    },
+    {
+      "id": "HkzJEqcjv",
+      "label": "WAIT",
+      "position": {
+        "units": "slots",
+        "x": 11,
+        "y": 4
+      },
+      "type": "xod/patch-nodes/from-bus"
+    },
+    {
+      "description": "Reset maximum flows.",
+      "id": "Hy5beFcsw",
+      "label": "RMF",
+      "position": {
+        "units": "slots",
+        "x": 12,
+        "y": 1
+      },
+      "type": "xod/patch-nodes/input-pulse"
+    },
+    {
+      "boundLiterals": {
+        "__out__": "5"
+      },
+      "description": "Inspiratory threshold (SLM).",
+      "id": "S1XFkY5sv",
+      "label": "IT",
+      "position": {
+        "units": "slots",
+        "x": 9,
+        "y": 1
+      },
+      "type": "xod/patch-nodes/input-number"
+    },
+    {
+      "description": "Apnea detected.",
+      "id": "S1Xik9qjD",
+      "position": {
+        "units": "slots",
+        "x": 9,
+        "y": 5
+      },
+      "type": "@/detect-apnea"
+    },
+    {
+      "id": "SJT0bqqoD",
+      "label": "RMF",
+      "position": {
+        "units": "slots",
+        "x": 12,
+        "y": 2
+      },
+      "type": "xod/patch-nodes/to-bus"
+    },
+    {
+      "description": "Flow rate (SLM).",
+      "id": "SJmPycciD",
+      "label": "FR",
+      "position": {
+        "units": "slots",
+        "x": 12,
+        "y": 6
+      },
+      "type": "xod/patch-nodes/output-number"
+    },
+    {
+      "description": "Respiratory rate (breaths per minute).",
+      "id": "SkJQkqciP",
+      "label": "RR",
       "position": {
         "units": "slots",
         "x": 6,
+        "y": 6
+      },
+      "type": "xod/patch-nodes/output-number"
+    },
+    {
+      "boundLiterals": {
+        "__out__": "10"
+      },
+      "description": "Period of time to wait for a breath before reporting apnea (setting APN output to TRUE).",
+      "id": "SkM3X5qsP",
+      "label": "WAIT",
+      "position": {
+        "units": "slots",
+        "x": 11,
+        "y": 1
+      },
+      "type": "xod/patch-nodes/input-number"
+    },
+    {
+      "id": "SkmzsOciv",
+      "position": {
+        "units": "slots",
+        "x": 13,
+        "y": 2
+      },
+      "type": "@/sfm3x00-flow-meter"
+    },
+    {
+      "id": "SytAT99jP",
+      "position": {
+        "units": "slots",
+        "x": 7,
         "y": 5
       },
-      "size": {
-        "height": 1,
+      "type": "@/moving-average-3"
+    },
+    {
+      "id": "rJzeGcqoD",
+      "label": "RMF",
+      "position": {
         "units": "slots",
-        "width": 2
+        "x": 15,
+        "y": 4
       },
-      "type": "xod/debug/watch"
+      "type": "xod/patch-nodes/from-bus"
+    },
+    {
+      "boundLiterals": {
+        "__out__": "Continuously"
+      },
+      "id": "rk7xltciD",
+      "label": "UPD",
+      "position": {
+        "units": "slots",
+        "x": 15,
+        "y": 1
+      },
+      "type": "xod/patch-nodes/input-pulse"
+    },
+    {
+      "description": "Largest expiratory flow rate (SLM) recorded.",
+      "id": "ryu_lq9iw",
+      "label": "MaxE",
+      "position": {
+        "units": "slots",
+        "x": 14,
+        "y": 6
+      },
+      "type": "xod/patch-nodes/output-number"
     }
   ]
 }

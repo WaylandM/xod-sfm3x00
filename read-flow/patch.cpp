@@ -8,7 +8,7 @@ node {
 
         auto sensor = getValue<input_DEV>(ctx);
 
-        emitValue<output_SLM>(ctx, sensor->readFlow());
+        emitValue<output_FR>(ctx, sensor->readFlow());
         emitValue<output_DONE>(ctx, 1);
     }
 }

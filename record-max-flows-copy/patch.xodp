@@ -1,14 +1,14 @@
 {
   "links": [
     {
-      "id": "B1EXiwtiv",
+      "id": "B1PZtO9sD",
       "input": {
-        "nodeId": "S1mw9DYiw",
-        "pinKey": "__in__"
+        "nodeId": "ByR1tu5jP",
+        "pinKey": "rkmiHCaIZ"
       },
       "output": {
-        "nodeId": "HyLs9DYjP",
-        "pinKey": "r1lQLAOBwJb"
+        "nodeId": "SyXNAtYjv",
+        "pinKey": "__out__"
       }
     },
     {
@@ -20,6 +20,17 @@
       "output": {
         "nodeId": "HyLs9DYjP",
         "pinKey": "r1lQLAOBwJb"
+      }
+    },
+    {
+      "id": "BJKzYuqiv",
+      "input": {
+        "nodeId": "ByR1tu5jP",
+        "pinKey": "rJUjrCTUb"
+      },
+      "output": {
+        "nodeId": "rkUt0PKoD",
+        "pinKey": "__out__"
       }
     },
     {
@@ -45,6 +56,17 @@
       }
     },
     {
+      "id": "ByK-Yd9sw",
+      "input": {
+        "nodeId": "H1XxRYKsw",
+        "pinKey": "Hy-QUR_BPkZ"
+      },
+      "output": {
+        "nodeId": "ByR1tu5jP",
+        "pinKey": "rkWHDAW_f"
+      }
+    },
+    {
       "id": "H14hctKsP",
       "input": {
         "nodeId": "HkRscYYjD",
@@ -52,17 +74,6 @@
       },
       "output": {
         "nodeId": "rkUt0PKoD",
-        "pinKey": "__out__"
-      }
-    },
-    {
-      "id": "H1IzCFFoD",
-      "input": {
-        "nodeId": "H1XxRYKsw",
-        "pinKey": "HkXm80uHPyb"
-      },
-      "output": {
-        "nodeId": "Sy4XqvYsP",
         "pinKey": "__out__"
       }
     },
@@ -144,14 +155,25 @@
       }
     },
     {
-      "id": "SJ84RtYoD",
+      "id": "Hyglo55jv",
       "input": {
-        "nodeId": "H1XxRYKsw",
-        "pinKey": "Hy-QUR_BPkZ"
+        "nodeId": "S1mw9DYiw",
+        "pinKey": "__in__"
       },
       "output": {
-        "nodeId": "SyXNAtYjv",
-        "pinKey": "__out__"
+        "nodeId": "By3ZZovtiw",
+        "pinKey": "r1lQLAOBwJb"
+      }
+    },
+    {
+      "id": "S10ZYuqiv",
+      "input": {
+        "nodeId": "H1XxRYKsw",
+        "pinKey": "HkXm80uHPyb"
+      },
+      "output": {
+        "nodeId": "ByR1tu5jP",
+        "pinKey": "S1yaHC6UW"
       }
     },
     {
@@ -163,6 +185,17 @@
       "output": {
         "nodeId": "rkTCqYFov",
         "pinKey": "rkWHDAW_f"
+      }
+    },
+    {
+      "id": "Ska1s9qov",
+      "input": {
+        "nodeId": "rJAOcvYsD",
+        "pinKey": "__in__"
+      },
+      "output": {
+        "nodeId": "HyLs9DYjP",
+        "pinKey": "r1lQLAOBwJb"
       }
     },
     {
@@ -185,6 +218,17 @@
       "output": {
         "nodeId": "HkRscYYjD",
         "pinKey": "rkWHDAW_f"
+      }
+    },
+    {
+      "id": "SynWYd9iv",
+      "input": {
+        "nodeId": "ByR1tu5jP",
+        "pinKey": "S10qrR6UZ"
+      },
+      "output": {
+        "nodeId": "Sy4XqvYsP",
+        "pinKey": "__out__"
       }
     },
     {
@@ -232,17 +276,6 @@
       }
     },
     {
-      "id": "rkvmjPKow",
-      "input": {
-        "nodeId": "rJAOcvYsD",
-        "pinKey": "__in__"
-      },
-      "output": {
-        "nodeId": "By3ZZovtiw",
-        "pinKey": "r1lQLAOBwJb"
-      }
-    },
-    {
       "id": "ryX9nvKov",
       "input": {
         "nodeId": "HyroovFiD",
@@ -279,16 +312,28 @@
       "id": "By3ZZovtiw",
       "position": {
         "units": "slots",
-        "x": 13,
+        "x": 10,
         "y": 4
       },
       "type": "xod/core/buffer"
     },
     {
+      "boundLiterals": {
+        "rygjH06LW": "0"
+      },
+      "id": "ByR1tu5jP",
+      "position": {
+        "units": "slots",
+        "x": 4,
+        "y": 1
+      },
+      "type": "xod/core/select"
+    },
+    {
       "id": "ByvrtYFjv",
       "position": {
         "units": "slots",
-        "x": 15,
+        "x": 12,
         "y": 5
       },
       "type": "xod/core/defer(number)"
@@ -336,17 +381,18 @@
       "id": "HyroovFiD",
       "position": {
         "units": "slots",
-        "x": 11,
+        "x": 8,
         "y": 4
       },
       "type": "xod/core/pulse-on-true"
     },
     {
+      "description": "Largest expiratory flow rate (SLM) recorded.",
       "id": "S1mw9DYiw",
-      "label": "MIN",
+      "label": "MaxE",
       "position": {
         "units": "slots",
-        "x": 3,
+        "x": 10,
         "y": 5
       },
       "type": "xod/patch-nodes/output-number"
@@ -355,7 +401,7 @@
       "id": "SJJUjDKjv",
       "position": {
         "units": "slots",
-        "x": 11,
+        "x": 8,
         "y": 3
       },
       "type": "xod/core/less"
@@ -370,12 +416,13 @@
       "type": "xod/core/greater"
     },
     {
+      "description": "Flow rate (SLM).",
       "id": "Sy4XqvYsP",
-      "label": "NUM",
+      "label": "FR",
       "position": {
         "units": "slots",
         "x": 4,
-        "y": 1
+        "y": 0
       },
       "type": "xod/patch-nodes/input-number"
     },
@@ -383,7 +430,7 @@
       "id": "SyB9nDtoP",
       "position": {
         "units": "slots",
-        "x": 12,
+        "x": 9,
         "y": 4
       },
       "type": "xod/core/defer(pulse)"
@@ -394,16 +441,17 @@
       "position": {
         "units": "slots",
         "x": 5,
-        "y": 1
+        "y": 0
       },
       "type": "xod/patch-nodes/input-pulse"
     },
     {
+      "description": "Largest inspiratory flow rate (SLM) recorded.",
       "id": "rJAOcvYsD",
-      "label": "MAX",
+      "label": "MaxI",
       "position": {
         "units": "slots",
-        "x": 13,
+        "x": 3,
         "y": 5
       },
       "type": "xod/patch-nodes/output-number"
@@ -424,7 +472,7 @@
       "id": "rkTCqYFov",
       "position": {
         "units": "slots",
-        "x": 13,
+        "x": 10,
         "y": 3
       },
       "type": "xod/core/select"
@@ -435,7 +483,7 @@
       "position": {
         "units": "slots",
         "x": 7,
-        "y": 1
+        "y": 0
       },
       "type": "xod/patch-nodes/input-pulse"
     }

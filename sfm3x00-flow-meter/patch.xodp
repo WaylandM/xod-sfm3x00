@@ -120,7 +120,7 @@
       "label": "UPD",
       "position": {
         "units": "slots",
-        "x": 3,
+        "x": 5,
         "y": 0
       },
       "type": "xod/patch-nodes/input-pulse"
@@ -131,7 +131,7 @@
       "label": "RST",
       "position": {
         "units": "slots",
-        "x": 5,
+        "x": 4,
         "y": 0
       },
       "type": "xod/patch-nodes/input-pulse"
@@ -157,7 +157,7 @@
     {
       "description": "Flow rate (standard litre per minute).",
       "id": "SknHgsqVw",
-      "label": "SLM",
+      "label": "FR",
       "position": {
         "units": "slots",
         "x": 2,
