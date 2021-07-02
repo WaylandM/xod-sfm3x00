@@ -1,0 +1,115 @@
+{
+  "nodes": [
+    {
+      "description": "Pulse on read.",
+      "id": "rJQfRn33d",
+      "label": "DONE",
+      "position": {
+        "units": "slots",
+        "x": 6,
+        "y": 2
+      },
+      "type": "xod/patch-nodes/output-pulse"
+    },
+    {
+      "description": "A SFM3x00 device.",
+      "id": "SklXM022hO",
+      "label": "DEV",
+      "position": {
+        "units": "slots",
+        "x": 0,
+        "y": 0
+      },
+      "type": "@/input-sfm3x00-device"
+    },
+    {
+      "description": "Flow rate (standard litre per minute).",
+      "id": "rybXzR332u",
+      "label": "FR",
+      "position": {
+        "units": "slots",
+        "x": 0,
+        "y": 2
+      },
+      "type": "xod/patch-nodes/output-number"
+    },
+    {
+      "boundLiterals": {
+        "__out__": "Continuously"
+      },
+      "description": "Update.",
+      "id": "Byz7fChhhO",
+      "label": "UPD",
+      "position": {
+        "units": "slots",
+        "x": 1,
+        "y": 0
+      },
+      "type": "xod/patch-nodes/input-pulse"
+    },
+    {
+      "id": "r177fCh3nO",
+      "position": {
+        "units": "slots",
+        "x": 0,
+        "y": 1
+      },
+      "type": "xod/patch-nodes/not-implemented-in-xod"
+    },
+    {
+      "description": "Inspiratory volume (cubic centimetres).",
+      "id": "rkHH0nh3_",
+      "label": "iVOL",
+      "position": {
+        "units": "slots",
+        "x": 2,
+        "y": 2
+      },
+      "type": "xod/patch-nodes/output-number"
+    },
+    {
+      "description": "Pulse on start of expiration.",
+      "id": "r1TCkC2hu",
+      "label": "EXP",
+      "position": {
+        "units": "slots",
+        "x": 5,
+        "y": 2
+      },
+      "type": "xod/patch-nodes/output-pulse"
+    },
+    {
+      "description": "Pulse on start of inspiration.",
+      "id": "H1gpRJ023u",
+      "label": "INS",
+      "position": {
+        "units": "slots",
+        "x": 4,
+        "y": 2
+      },
+      "type": "xod/patch-nodes/output-pulse"
+    },
+    {
+      "description": "Expiratory volume (cubic centimetres).",
+      "id": "S1hUg022_",
+      "label": "eVOL",
+      "position": {
+        "units": "slots",
+        "x": 3,
+        "y": 2
+      },
+      "type": "xod/patch-nodes/output-number"
+    },
+    {
+      "description": "Respiratory rate (breaths per minute).",
+      "id": "Hyb0eCh3O",
+      "label": "RR",
+      "position": {
+        "units": "slots",
+        "x": 1,
+        "y": 2
+      },
+      "type": "xod/patch-nodes/output-number"
+    }
+  ]
+}
