@@ -42,7 +42,7 @@
       "label": "UPD",
       "position": {
         "units": "slots",
-        "x": 1,
+        "x": 2,
         "y": 0
       },
       "type": "xod/patch-nodes/input-pulse"
@@ -110,6 +110,17 @@
         "y": 2
       },
       "type": "xod/patch-nodes/output-number"
+    },
+    {
+      "description": "Reset. Triggers soft reset.",
+      "id": "BkXVkT62u",
+      "label": "RST",
+      "position": {
+        "units": "slots",
+        "x": 1,
+        "y": 0
+      },
+      "type": "xod/patch-nodes/input-pulse"
     }
   ]
 }
