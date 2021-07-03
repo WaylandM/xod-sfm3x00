@@ -1,0 +1,47 @@
+{
+  "description": "Perform a soft-reset.",
+  "nodes": [
+    {
+      "id": "H1c4o59Ew",
+      "position": {
+        "units": "slots",
+        "x": 0,
+        "y": 1
+      },
+      "type": "xod/patch-nodes/not-implemented-in-xod"
+    },
+    {
+      "description": "Reset. Triggers soft reset.",
+      "id": "rkUUicc4P",
+      "label": "RST",
+      "position": {
+        "units": "slots",
+        "x": 1,
+        "y": 0
+      },
+      "type": "xod/patch-nodes/input-pulse"
+    },
+    {
+      "description": "A SFM3x00 device.",
+      "id": "rkpNo59Nw",
+      "label": "DEV",
+      "position": {
+        "units": "slots",
+        "x": 0,
+        "y": 0
+      },
+      "type": "@/input-sfm3x00-device"
+    },
+    {
+      "description": "Pulse on reset.",
+      "id": "rykFo5cVD",
+      "label": "DONE",
+      "position": {
+        "units": "slots",
+        "x": 0,
+        "y": 2
+      },
+      "type": "xod/patch-nodes/output-pulse"
+    }
+  ]
+}

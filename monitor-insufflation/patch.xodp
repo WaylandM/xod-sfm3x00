@@ -1,2 +1,130 @@
 {
+  "description": "Monitor unidirectional flow (inspiration/insufflation). Measures flow rate, respiratory rate and inspiratory volume.",
+  "nodes": [
+    {
+      "description": "Pulse on read.",
+      "id": "Hy_QRe0hu",
+      "label": "DONE",
+      "position": {
+        "units": "slots",
+        "x": 5,
+        "y": 2
+      },
+      "type": "xod/patch-nodes/output-pulse"
+    },
+    {
+      "description": "A SFM3x00 device.",
+      "id": "BJxOXCgR2_",
+      "label": "DEV",
+      "position": {
+        "units": "slots",
+        "x": 0,
+        "y": 0
+      },
+      "type": "@/input-sfm3x00-device"
+    },
+    {
+      "description": "Flow rate (standard litre per minute).",
+      "id": "Bk-um0l02O",
+      "label": "FR",
+      "position": {
+        "units": "slots",
+        "x": 0,
+        "y": 2
+      },
+      "type": "xod/patch-nodes/output-number"
+    },
+    {
+      "boundLiterals": {
+        "__out__": "Continuously"
+      },
+      "description": "Update.",
+      "id": "HkzdmAgA3_",
+      "label": "UPD",
+      "position": {
+        "units": "slots",
+        "x": 3,
+        "y": 0
+      },
+      "type": "xod/patch-nodes/input-pulse"
+    },
+    {
+      "id": "By7_Q0lRnu",
+      "position": {
+        "units": "slots",
+        "x": 0,
+        "y": 1
+      },
+      "type": "xod/patch-nodes/not-implemented-in-xod"
+    },
+    {
+      "description": "Inspiratory volume (cubic centimetres).",
+      "id": "ryE_XCg03d",
+      "label": "iVOL",
+      "position": {
+        "units": "slots",
+        "x": 2,
+        "y": 2
+      },
+      "type": "xod/patch-nodes/output-number"
+    },
+    {
+      "description": "Pulse on start of expiration.",
+      "id": "HkrdmCe0nu",
+      "label": "EXP",
+      "position": {
+        "units": "slots",
+        "x": 4,
+        "y": 2
+      },
+      "type": "xod/patch-nodes/output-pulse"
+    },
+    {
+      "description": "Pulse on start of inspiration.",
+      "id": "SyIuQAlRhd",
+      "label": "INS",
+      "position": {
+        "units": "slots",
+        "x": 3,
+        "y": 2
+      },
+      "type": "xod/patch-nodes/output-pulse"
+    },
+    {
+      "description": "Respiratory rate (breaths per minute).",
+      "id": "ByuuXAgCh_",
+      "label": "RR",
+      "position": {
+        "units": "slots",
+        "x": 1,
+        "y": 2
+      },
+      "type": "xod/patch-nodes/output-number"
+    },
+    {
+      "description": "Reset. Triggers soft reset.",
+      "id": "SJKd7Ag0nd",
+      "label": "RST",
+      "position": {
+        "units": "slots",
+        "x": 2,
+        "y": 0
+      },
+      "type": "xod/patch-nodes/input-pulse"
+    },
+    {
+      "boundLiterals": {
+        "__out__": "5"
+      },
+      "description": "Inspiratory threshold (SLM).",
+      "id": "HJlTfbC3u",
+      "label": "IT",
+      "position": {
+        "units": "slots",
+        "x": 1,
+        "y": 0
+      },
+      "type": "xod/patch-nodes/input-number"
+    }
+  ]
 }

@@ -16,9 +16,11 @@ node {
         if (!isSettingUp()) return;
 
         auto address = getValue<input_ADDR>(ctx);
+        auto wire = getValue<input_I2C>(ctx);
 
         Type sensor = new (mem) SFM3X00(address);
-        Wire.begin();
+
+        wire->begin();
         sensor->begin();
 
         emitValue<output_DEV>(ctx, sensor);

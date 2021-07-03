@@ -1,4 +1,5 @@
 {
+  "description": "Monitor bidirectional flow (inspiration/insufflation and expiration/exsufflation). Measures flow rate, respiratory rate, inspiratory volume and expiratory volume. ",
   "nodes": [
     {
       "description": "Pulse on read.",
@@ -68,7 +69,7 @@
       "type": "xod/patch-nodes/output-number"
     },
     {
-      "description": "Pulse on start of expiration.",
+      "description": "Pulse on end of expiration (start of inspiration).",
       "id": "r1TCkC2hu",
       "label": "EXP",
       "position": {
@@ -79,7 +80,7 @@
       "type": "xod/patch-nodes/output-pulse"
     },
     {
-      "description": "Pulse on start of inspiration.",
+      "description": "Pulse on end of inspiration (start of expiration).",
       "id": "H1gpRJ023u",
       "label": "INS",
       "position": {
@@ -112,7 +113,7 @@
       "type": "xod/patch-nodes/output-number"
     },
     {
-      "description": "Reset. Triggers soft reset.",
+      "description": "Reset. Triggers soft reset and reinitialisation of sensor.",
       "id": "BkXVkT62u",
       "label": "RST",
       "position": {

@@ -98,10 +98,24 @@
         "nodeId": "HJp_ip3nd",
         "pinKey": "Hyb0eCh3O"
       }
+    },
+    {
+      "id": "B1p7-gR3_",
+      "input": {
+        "nodeId": "HJp_ip3nd",
+        "pinKey": "BkXVkT62u"
+      },
+      "output": {
+        "nodeId": "SJKQ-xAnd",
+        "pinKey": "Bkf4BDsmV"
+      }
     }
   ],
   "nodes": [
     {
+      "boundLiterals": {
+        "Byz7fChhhO": "Continuously"
+      },
       "id": "HJp_ip3nd",
       "position": {
         "units": "slots",
@@ -114,7 +128,7 @@
       "id": "BkrKjTnh_",
       "position": {
         "units": "slots",
-        "x": 4,
+        "x": 3,
         "y": 2
       },
       "type": "@/sfm3x00-device"
@@ -210,6 +224,15 @@
         "width": 2
       },
       "type": "xod/debug/watch"
+    },
+    {
+      "id": "SJKQ-xAnd",
+      "position": {
+        "units": "slots",
+        "x": 6,
+        "y": 2
+      },
+      "type": "xod/debug/tweak-pulse"
     }
   ]
 }

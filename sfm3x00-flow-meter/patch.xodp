@@ -88,6 +88,17 @@
         "nodeId": "Sk0gljqEP",
         "pinKey": "SkkfLc5ED"
       }
+    },
+    {
+      "id": "r1NEeWAnd",
+      "input": {
+        "nodeId": "Sk0gljqEP",
+        "pinKey": "S1mr9e0hu"
+      },
+      "output": {
+        "nodeId": "HkxVe-R3_",
+        "pinKey": "__out__"
+      }
     }
   ],
   "nodes": [
@@ -189,6 +200,17 @@
         "y": 3
       },
       "type": "xod/patch-nodes/output-pulse"
+    },
+    {
+      "description": "I²C bus",
+      "id": "HkxVe-R3_",
+      "label": "I2C",
+      "position": {
+        "units": "slots",
+        "x": 3,
+        "y": 0
+      },
+      "type": "xod/i2c/input-i2c"
     }
   ]
 }

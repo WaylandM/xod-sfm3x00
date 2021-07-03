@@ -1,10 +1,10 @@
 node {
     // Volume (cm3)
     Number vol=0;
-    // Flow has positive value: true for inspiration/insufflation, false for expiration/exsufflation.
-    bool posFlow = true;
-    // Previous value of posFlow.
-    bool posFlowPrev = true;
+    // Inspiratory flow: true during inspiration/insufflation.
+    bool inspFlow = true;
+    // Previous value of inspFlow.
+    bool inspFlowPrev = true;
     // Previous flow measurement time (ms).
     TimeMs mt_prev;
     // Time of latest inspiration (ms).
@@ -25,7 +25,10 @@ node {
         bool rst = isInputDirty<input_RST>(ctx);
 
         TimeMs mt = transactionTime();
+
         auto sensor = getValue<input_DEV>(ctx);
+
+        auto thresh = getValue<input_IT>(ctx);
 
         // soft reset
         if (rst) {
@@ -42,16 +45,14 @@ node {
             while (flow_dir_changes<2) {
                 // Measure flow
                 flow = sensor->readFlow();
-                // Check direction of flow. Round flow to prevent small fluctuations around zero
-                // from changing the value of posFlow.
-                posFlow = 0 < round(flow);
-                if (posFlowPrev!=posFlow) {
-                    // if direction of flow has changed
+                // Check to see if rate of flow is above user-defined inspiratory threshold.
+                inspFlow = round(flow) > thresh;
+                if (inspFlowPrev!=inspFlow) {
                     flow_dir_changes += 1;
-                    if(posFlowPrev) {
+                    if(inspFlowPrev) {
                         ins_t_prev=mt;
                     }
-                    posFlowPrev=posFlow;
+                    inspFlowPrev=inspFlow;
                 }
                 delay(20);
             }
@@ -60,10 +61,12 @@ node {
 
         // Measure flow rate, volume and respiratory rate.
         flow = sensor->readFlow();
-        posFlow = 0 < round(flow); 
+        inspFlow = round(flow) > thresh;
 
-        if (posFlowPrev!=posFlow) {
-            if(posFlowPrev) {
+        // check for change of flow direction
+        if (inspFlowPrev!=inspFlow) {
+            // if direction of flow has changed
+            if(inspFlowPrev) {
                 emitValue<output_iVOL>(ctx, vol);
                 emitValue<output_INS>(ctx, 1);
                 ins_t=mt;
@@ -72,10 +75,9 @@ node {
                 emitValue<output_RR>(ctx, resp_rate);
                 ins_t_prev=ins_t;
             } else {
-                emitValue<output_eVOL>(ctx, -vol);
                 emitValue<output_EXP>(ctx, 1);
             }
-            posFlowPrev=posFlow;
+            inspFlowPrev=inspFlow;
             // reset volume
             vol = 0;
         }

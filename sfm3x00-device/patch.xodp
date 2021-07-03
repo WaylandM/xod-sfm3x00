@@ -35,6 +35,17 @@
         "y": 0
       },
       "type": "xod/patch-nodes/input-byte"
+    },
+    {
+      "description": "I²C bus",
+      "id": "S1mr9e0hu",
+      "label": "I2C",
+      "position": {
+        "units": "slots",
+        "x": 1,
+        "y": 0
+      },
+      "type": "xod/i2c/input-i2c"
     }
   ]
 }
