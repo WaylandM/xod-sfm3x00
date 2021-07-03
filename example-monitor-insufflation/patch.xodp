@@ -87,6 +87,17 @@
         "nodeId": "HJis1fR2d",
         "pinKey": "HkrdmCe0nu"
       }
+    },
+    {
+      "id": "H1q-PU0hd",
+      "input": {
+        "nodeId": "HJis1fR2d",
+        "pinKey": "SJKd7Ag0nd"
+      },
+      "output": {
+        "nodeId": "BJBZvUR3u",
+        "pinKey": "Bkf4BDsmV"
+      }
     }
   ],
   "nodes": [
@@ -185,6 +196,15 @@
         "width": 2
       },
       "type": "xod/debug/watch"
+    },
+    {
+      "id": "BJBZvUR3u",
+      "position": {
+        "units": "slots",
+        "x": 6,
+        "y": 0
+      },
+      "type": "xod/debug/tweak-pulse"
     }
   ]
 }
