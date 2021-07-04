@@ -1,0 +1,208 @@
+{
+  "description": "Reports the following information about a SFM3x00 sensor: article number, serial number, offset and scale factor.",
+  "links": [
+    {
+      "id": "rymoQpikTd",
+      "input": {
+        "nodeId": "SkeoX6jka_",
+        "pinKey": "rJ-m_hcqw"
+      },
+      "output": {
+        "nodeId": "ByGo7pjJ6d",
+        "pinKey": "SkkfLc5ED"
+      }
+    },
+    {
+      "id": "rJ4sXTikp_",
+      "input": {
+        "nodeId": "Syomajya_",
+        "pinKey": "SkS51viNv"
+      },
+      "output": {
+        "nodeId": "ByGo7pjJ6d",
+        "pinKey": "SkkfLc5ED"
+      }
+    },
+    {
+      "id": "H1Si76oyau",
+      "input": {
+        "nodeId": "ryZomajJ6d",
+        "pinKey": "HkxJjin5cD"
+      },
+      "output": {
+        "nodeId": "ByGo7pjJ6d",
+        "pinKey": "SkkfLc5ED"
+      }
+    },
+    {
+      "id": "BkhDTs1p_",
+      "input": {
+        "nodeId": "ByGo7pjJ6d",
+        "pinKey": "S1mr9e0hu"
+      },
+      "output": {
+        "nodeId": "ByhN6okT_",
+        "pinKey": "__out__"
+      }
+    },
+    {
+      "id": "BJO5Tjk6O",
+      "input": {
+        "nodeId": "ByGo7pjJ6d",
+        "pinKey": "rkTlIccND"
+      },
+      "output": {
+        "nodeId": "rkE_poJa_",
+        "pinKey": "__out__"
+      }
+    },
+    {
+      "id": "ryCoTo1pd",
+      "input": {
+        "nodeId": "BkZopskTd",
+        "pinKey": "__in__"
+      },
+      "output": {
+        "nodeId": "SkeoX6jka_",
+        "pinKey": "S1kf9hqcD"
+      }
+    },
+    {
+      "id": "S17hpiJ6d",
+      "input": {
+        "nodeId": "SJ8s6oJpO",
+        "pinKey": "__in__"
+      },
+      "output": {
+        "nodeId": "ryZomajJ6d",
+        "pinKey": "H1Wyijhqcw"
+      }
+    },
+    {
+      "id": "BkS3TokTO",
+      "input": {
+        "nodeId": "rJ38spo1aO",
+        "pinKey": "__in__"
+      },
+      "output": {
+        "nodeId": "Syomajya_",
+        "pinKey": "rJ4aJwoVD"
+      }
+    },
+    {
+      "id": "SJUnpokaO",
+      "input": {
+        "nodeId": "Skvsaj1a_",
+        "pinKey": "__in__"
+      },
+      "output": {
+        "nodeId": "Syomajya_",
+        "pinKey": "r1dpkDi4D"
+      }
+    }
+  ],
+  "nodes": [
+    {
+      "id": "Syomajya_",
+      "position": {
+        "units": "slots",
+        "x": 5,
+        "y": 2
+      },
+      "type": "@/read-offset-scale-factor"
+    },
+    {
+      "id": "SkeoX6jka_",
+      "position": {
+        "units": "slots",
+        "x": 1,
+        "y": 2
+      },
+      "type": "@/read-article-number"
+    },
+    {
+      "id": "ryZomajJ6d",
+      "position": {
+        "units": "slots",
+        "x": 3,
+        "y": 2
+      },
+      "type": "@/read-serial-number"
+    },
+    {
+      "id": "ByGo7pjJ6d",
+      "position": {
+        "units": "slots",
+        "x": 3,
+        "y": 1
+      },
+      "type": "@/sfm3x00-device"
+    },
+    {
+      "description": "I²C bus",
+      "id": "ByhN6okT_",
+      "label": "I2C",
+      "position": {
+        "units": "slots",
+        "x": 4,
+        "y": 0
+      },
+      "type": "xod/i2c/input-i2c"
+    },
+    {
+      "description": "I²C address of device.",
+      "id": "rkE_poJa_",
+      "label": "ADDR",
+      "position": {
+        "units": "slots",
+        "x": 3,
+        "y": 0
+      },
+      "type": "xod/patch-nodes/input-byte"
+    },
+    {
+      "description": "Article number.",
+      "id": "BkZopskTd",
+      "label": "ART",
+      "position": {
+        "units": "slots",
+        "x": 1,
+        "y": 3
+      },
+      "type": "xod/patch-nodes/output-number"
+    },
+    {
+      "description": "Serial number.",
+      "id": "SJ8s6oJpO",
+      "label": "SN",
+      "position": {
+        "units": "slots",
+        "x": 3,
+        "y": 3
+      },
+      "type": "xod/patch-nodes/output-number"
+    },
+    {
+      "description": "Offset.",
+      "id": "rJ38spo1aO",
+      "label": "Offset",
+      "position": {
+        "units": "slots",
+        "x": 5,
+        "y": 3
+      },
+      "type": "xod/patch-nodes/output-number"
+    },
+    {
+      "description": "Scale factor.",
+      "id": "Skvsaj1a_",
+      "label": "Scale",
+      "position": {
+        "units": "slots",
+        "x": 6,
+        "y": 3
+      },
+      "type": "xod/patch-nodes/output-number"
+    }
+  ]
+}

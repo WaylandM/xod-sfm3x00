@@ -1,0 +1,227 @@
+{
+  "links": [
+    {
+      "id": "SJ5Jy2kTd",
+      "input": {
+        "nodeId": "ryh2RjkTd",
+        "pinKey": "rygAyHykTO"
+      },
+      "output": {
+        "nodeId": "HkdJJnkaO",
+        "pinKey": "SkkfLc5ED"
+      }
+    },
+    {
+      "id": "HJ7-k3yaO",
+      "input": {
+        "nodeId": "HkdJJnkaO",
+        "pinKey": "rkTlIccND"
+      },
+      "output": {
+        "nodeId": "Syvxk2kTO",
+        "pinKey": "__out__"
+      }
+    },
+    {
+      "id": "SJmMy2kpu",
+      "input": {
+        "nodeId": "HkdJJnkaO",
+        "pinKey": "S1mr9e0hu"
+      },
+      "output": {
+        "nodeId": "S1dWkn1T_",
+        "pinKey": "__out__"
+      }
+    },
+    {
+      "id": "HJaDyh16u",
+      "input": {
+        "nodeId": "rk4v12yaO",
+        "pinKey": "__in__"
+      },
+      "output": {
+        "nodeId": "ryh2RjkTd",
+        "pinKey": "rk0JSyJa_"
+      }
+    },
+    {
+      "id": "BJkOJhkau",
+      "input": {
+        "nodeId": "ryh2RjkTd",
+        "pinKey": "HyfA1BJJ6_"
+      },
+      "output": {
+        "nodeId": "r1ncNyhkpd",
+        "pinKey": "__out__"
+      }
+    },
+    {
+      "id": "HJl_khkpu",
+      "input": {
+        "nodeId": "ryh2RjkTd",
+        "pinKey": "HJndSJJ6d"
+      },
+      "output": {
+        "nodeId": "HkqVJ3k6_",
+        "pinKey": "__out__"
+      }
+    },
+    {
+      "id": "HJX_13yp_",
+      "input": {
+        "nodeId": "ryh2RjkTd",
+        "pinKey": "H1_Ckr1k6u"
+      },
+      "output": {
+        "nodeId": "S1r4k2J6O",
+        "pinKey": "__out__"
+      }
+    },
+    {
+      "id": "rkOdJhyau",
+      "input": {
+        "nodeId": "SyF8J3k6O",
+        "pinKey": "__in__"
+      },
+      "output": {
+        "nodeId": "ryh2RjkTd",
+        "pinKey": "HJbCyrJyTd"
+      }
+    },
+    {
+      "id": "B1KOy3J6O",
+      "input": {
+        "nodeId": "ryCUk2Jau",
+        "pinKey": "__in__"
+      },
+      "output": {
+        "nodeId": "ryh2RjkTd",
+        "pinKey": "rkN0JBJJad"
+      }
+    },
+    {
+      "id": "SJ9_y31p_",
+      "input": {
+        "nodeId": "HJhA8J3yau",
+        "pinKey": "__in__"
+      },
+      "output": {
+        "nodeId": "ryh2RjkTd",
+        "pinKey": "B16Iv-1pd"
+      }
+    }
+  ],
+  "nodes": [
+    {
+      "id": "ryh2RjkTd",
+      "position": {
+        "units": "slots",
+        "x": 2,
+        "y": 2
+      },
+      "type": "@/measure-flow-volume"
+    },
+    {
+      "id": "HkdJJnkaO",
+      "position": {
+        "units": "slots",
+        "x": 1,
+        "y": 1
+      },
+      "type": "@/sfm3x00-device"
+    },
+    {
+      "boundLiterals": {
+        "__out__": "40h"
+      },
+      "id": "Syvxk2kTO",
+      "label": "ADDR",
+      "position": {
+        "units": "slots",
+        "x": 1,
+        "y": 0
+      },
+      "type": "xod/patch-nodes/input-byte"
+    },
+    {
+      "id": "S1dWkn1T_",
+      "label": "I2C",
+      "position": {
+        "units": "slots",
+        "x": 2,
+        "y": 0
+      },
+      "type": "xod/i2c/input-i2c"
+    },
+    {
+      "id": "S1r4k2J6O",
+      "label": "RST",
+      "position": {
+        "units": "slots",
+        "x": 3,
+        "y": 0
+      },
+      "type": "xod/patch-nodes/input-pulse"
+    },
+    {
+      "id": "HkqVJ3k6_",
+      "label": "RVol",
+      "position": {
+        "units": "slots",
+        "x": 5,
+        "y": 0
+      },
+      "type": "xod/patch-nodes/input-pulse"
+    },
+    {
+      "id": "r1ncNyhkpd",
+      "label": "UPD",
+      "position": {
+        "units": "slots",
+        "x": 6,
+        "y": 0
+      },
+      "type": "xod/patch-nodes/input-pulse"
+    },
+    {
+      "id": "SyF8J3k6O",
+      "label": "FR",
+      "position": {
+        "units": "slots",
+        "x": 2,
+        "y": 3
+      },
+      "type": "xod/patch-nodes/output-number"
+    },
+    {
+      "id": "ryCUk2Jau",
+      "label": "iVOL",
+      "position": {
+        "units": "slots",
+        "x": 3,
+        "y": 3
+      },
+      "type": "xod/patch-nodes/output-number"
+    },
+    {
+      "id": "HJhA8J3yau",
+      "label": "eVOL",
+      "position": {
+        "units": "slots",
+        "x": 4,
+        "y": 3
+      },
+      "type": "xod/patch-nodes/output-number"
+    },
+    {
+      "id": "rk4v12yaO",
+      "label": "DONE",
+      "position": {
+        "units": "slots",
+        "x": 5,
+        "y": 3
+      },
+      "type": "xod/patch-nodes/output-pulse"
+    }
+  ]
+}

@@ -1,0 +1,118 @@
+{
+  "links": [
+    {
+      "id": "rJcuAjJT_",
+      "input": {
+        "nodeId": "ByAxinqqP",
+        "pinKey": "HkXK-dGob"
+      },
+      "output": {
+        "nodeId": "B14_Csyp_",
+        "pinKey": "BkZopskTd"
+      }
+    },
+    {
+      "id": "Byjd0j1TO",
+      "input": {
+        "nodeId": "rkXDhn55D",
+        "pinKey": "HkXK-dGob"
+      },
+      "output": {
+        "nodeId": "B14_Csyp_",
+        "pinKey": "SJ8s6oJpO"
+      }
+    },
+    {
+      "id": "Hyn_Cj16u",
+      "input": {
+        "nodeId": "Sy7Wr629cv",
+        "pinKey": "HkXK-dGob"
+      },
+      "output": {
+        "nodeId": "B14_Csyp_",
+        "pinKey": "rJ38spo1aO"
+      }
+    },
+    {
+      "id": "HJAuCj1p_",
+      "input": {
+        "nodeId": "SyZHp3qcP",
+        "pinKey": "HkXK-dGob"
+      },
+      "output": {
+        "nodeId": "B14_Csyp_",
+        "pinKey": "Skvsaj1a_"
+      }
+    }
+  ],
+  "nodes": [
+    {
+      "id": "ByAxinqqP",
+      "position": {
+        "units": "slots",
+        "x": 1,
+        "y": 3
+      },
+      "size": {
+        "height": 1,
+        "units": "slots",
+        "width": 2
+      },
+      "type": "xod/debug/watch"
+    },
+    {
+      "id": "Sy7Wr629cv",
+      "position": {
+        "units": "slots",
+        "x": 8,
+        "y": 3
+      },
+      "size": {
+        "height": 1,
+        "units": "slots",
+        "width": 2
+      },
+      "type": "xod/debug/watch"
+    },
+    {
+      "id": "SyZHp3qcP",
+      "position": {
+        "units": "slots",
+        "x": 11,
+        "y": 3
+      },
+      "size": {
+        "height": 1,
+        "units": "slots",
+        "width": 2
+      },
+      "type": "xod/debug/watch"
+    },
+    {
+      "id": "rkXDhn55D",
+      "position": {
+        "units": "slots",
+        "x": 4,
+        "y": 3
+      },
+      "size": {
+        "height": 1,
+        "units": "slots",
+        "width": 3
+      },
+      "type": "xod/debug/watch"
+    },
+    {
+      "boundLiterals": {
+        "rkE_poJa_": "40h"
+      },
+      "id": "B14_Csyp_",
+      "position": {
+        "units": "slots",
+        "x": 4,
+        "y": 2
+      },
+      "type": "@/sfm3x00-about"
+    }
+  ]
+}
