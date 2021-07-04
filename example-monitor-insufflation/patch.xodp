@@ -108,7 +108,7 @@
         "x": 3,
         "y": 1
       },
-      "type": "@/monitor-insufflation"
+      "type": "@/measure-insufflation"
     },
     {
       "id": "rJ-nyzAnO",

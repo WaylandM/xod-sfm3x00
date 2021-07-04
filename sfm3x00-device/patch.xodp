@@ -46,6 +46,15 @@
         "y": 0
       },
       "type": "xod/i2c/input-i2c"
+    },
+    {
+      "id": "r1Fg3EypO",
+      "position": {
+        "units": "slots",
+        "x": 2,
+        "y": 1
+      },
+      "type": "xod/patch-nodes/utility"
     }
   ]
 }

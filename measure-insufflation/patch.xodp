@@ -1,20 +1,20 @@
 {
-  "description": "Monitor bidirectional flow (inspiration/insufflation and expiration/exsufflation). Measures flow rate, respiratory rate, inspiratory volume and expiratory volume. ",
+  "description": "Monitor unidirectional flow (inspiration/insufflation). Measures flow rate, respiratory rate and inspiratory volume.",
   "nodes": [
     {
       "description": "Pulse on read.",
-      "id": "rJQfRn33d",
+      "id": "Hy_QRe0hu",
       "label": "DONE",
       "position": {
         "units": "slots",
-        "x": 6,
+        "x": 5,
         "y": 2
       },
       "type": "xod/patch-nodes/output-pulse"
     },
     {
       "description": "A SFM3x00 device.",
-      "id": "SklXM022hO",
+      "id": "BJxOXCgR2_",
       "label": "DEV",
       "position": {
         "units": "slots",
@@ -25,7 +25,7 @@
     },
     {
       "description": "Flow rate (standard litre per minute).",
-      "id": "rybXzR332u",
+      "id": "Bk-um0l02O",
       "label": "FR",
       "position": {
         "units": "slots",
@@ -39,17 +39,17 @@
         "__out__": "Continuously"
       },
       "description": "Update.",
-      "id": "Byz7fChhhO",
+      "id": "HkzdmAgA3_",
       "label": "UPD",
       "position": {
         "units": "slots",
-        "x": 2,
+        "x": 3,
         "y": 0
       },
       "type": "xod/patch-nodes/input-pulse"
     },
     {
-      "id": "r177fCh3nO",
+      "id": "By7_Q0lRnu",
       "position": {
         "units": "slots",
         "x": 0,
@@ -59,7 +59,7 @@
     },
     {
       "description": "Inspiratory volume (cubic centimetres).",
-      "id": "rkHH0nh3_",
+      "id": "ryE_XCg03d",
       "label": "iVOL",
       "position": {
         "units": "slots",
@@ -69,20 +69,9 @@
       "type": "xod/patch-nodes/output-number"
     },
     {
-      "description": "Pulse on end of expiration (start of inspiration).",
-      "id": "r1TCkC2hu",
+      "description": "Pulse on start of expiration.",
+      "id": "HkrdmCe0nu",
       "label": "EXP",
-      "position": {
-        "units": "slots",
-        "x": 5,
-        "y": 2
-      },
-      "type": "xod/patch-nodes/output-pulse"
-    },
-    {
-      "description": "Pulse on end of inspiration (start of expiration).",
-      "id": "H1gpRJ023u",
-      "label": "INS",
       "position": {
         "units": "slots",
         "x": 4,
@@ -91,19 +80,19 @@
       "type": "xod/patch-nodes/output-pulse"
     },
     {
-      "description": "Expiratory volume (cubic centimetres).",
-      "id": "S1hUg022_",
-      "label": "eVOL",
+      "description": "Pulse on start of inspiration.",
+      "id": "SyIuQAlRhd",
+      "label": "INS",
       "position": {
         "units": "slots",
         "x": 3,
         "y": 2
       },
-      "type": "xod/patch-nodes/output-number"
+      "type": "xod/patch-nodes/output-pulse"
     },
     {
       "description": "Respiratory rate (breaths per minute).",
-      "id": "Hyb0eCh3O",
+      "id": "ByuuXAgCh_",
       "label": "RR",
       "position": {
         "units": "slots",
@@ -114,14 +103,37 @@
     },
     {
       "description": "Reset. Triggers soft reset and reinitialisation of sensor.",
-      "id": "BkXVkT62u",
+      "id": "SJKd7Ag0nd",
       "label": "RST",
+      "position": {
+        "units": "slots",
+        "x": 2,
+        "y": 0
+      },
+      "type": "xod/patch-nodes/input-pulse"
+    },
+    {
+      "boundLiterals": {
+        "__out__": "5"
+      },
+      "description": "Inspiratory threshold (SLM).",
+      "id": "HJlTfbC3u",
+      "label": "IT",
       "position": {
         "units": "slots",
         "x": 1,
         "y": 0
       },
-      "type": "xod/patch-nodes/input-pulse"
+      "type": "xod/patch-nodes/input-number"
+    },
+    {
+      "id": "HJLIhVJT_",
+      "position": {
+        "units": "slots",
+        "x": 6,
+        "y": 1
+      },
+      "type": "xod/patch-nodes/utility"
     }
   ]
 }

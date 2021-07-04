@@ -111,6 +111,15 @@
         "y": 2
       },
       "type": "xod/patch-nodes/output-number"
+    },
+    {
+      "id": "HJrShNyTu",
+      "position": {
+        "units": "slots",
+        "x": 5,
+        "y": 1
+      },
+      "type": "xod/patch-nodes/utility"
     }
   ]
 }
