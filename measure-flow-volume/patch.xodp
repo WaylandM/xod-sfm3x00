@@ -6,7 +6,7 @@
       "label": "DONE",
       "position": {
         "units": "slots",
-        "x": 2,
+        "x": 3,
         "y": 2
       },
       "type": "xod/patch-nodes/output-pulse"
@@ -100,6 +100,17 @@
         "y": 0
       },
       "type": "xod/patch-nodes/input-boolean"
+    },
+    {
+      "description": "Expiratory volume (cubic centimetres).",
+      "id": "B16Iv-1pd",
+      "label": "eVOL",
+      "position": {
+        "units": "slots",
+        "x": 2,
+        "y": 2
+      },
+      "type": "xod/patch-nodes/output-number"
     }
   ]
 }

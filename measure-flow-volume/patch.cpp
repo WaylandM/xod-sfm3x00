@@ -13,25 +13,23 @@ node {
 
     void evaluate(Context ctx) {
 
-        // soft reset
-        if (isInputDirty<input_RST>(ctx)) {
-            sensor->sendCommand(SOFT_RESET);
-            delay(100);
-            sensor->begin();
-        }
-
         // Measure flow rate only if there is an input pulse.
         if (!isInputDirty<input_UPD>(ctx))
             return;
 
         TimeMs mt = transactionTime();
 
-        if (isSettingUp()) {
-            return
-        }
+        if (isSettingUp())
+            return;
 
         auto sensor = getValue<input_DEV>(ctx);
 
+        // soft reset
+        if (isInputDirty<input_RST>(ctx)) {
+            sensor->sendCommand(SOFT_RESET);
+            delay(100);
+            sensor->begin();
+        }
 
         // Measure flow rate, volume and respiratory rate.
         flow = sensor->readFlow();
@@ -43,17 +41,18 @@ node {
             iVol=0;
             eVol=0;
         } else {
-            if (getValue<input_VolEn){
+            if (getValue<input_VolEn>(ctx)){
                 if (flow>0) {
-                    vol += flow/60*mt_delta;
+                    iVol += flow/60*mt_delta;
                 } else {
-                    eVol +=
+                    eVol += -flow/60*mt_delta;
                 }
             }
         }
 
         emitValue<output_FR>(ctx, flow);
-        emitValue<output_iVOL>(ctx, vol);
+        emitValue<output_iVOL>(ctx, iVol);
+        emitValue<output_eVOL>(ctx, eVol);
         emitValue<output_DONE>(ctx, 1);
     }
 }
