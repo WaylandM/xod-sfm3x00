@@ -39,7 +39,7 @@ node {
 
         // Setting up. If we start measuring during an inspiration/insufflation or expiration/exsufflation,
         // the first measurement will be inaccurate. The following code makes the program wait for an
-        // expiration/exsufflation before starting measurements.
+        // inspiration/insufflation before starting measurements.
         if (isSettingUp() || rst){
             uint8_t flow_dir_changes = 0;
             while (flow_dir_changes<2) {
@@ -56,6 +56,7 @@ node {
                 }
                 delay(20);
             }
+            mt_prev = millis();
             return;
         }
 
@@ -68,14 +69,14 @@ node {
             // if direction of flow has changed
             if(inspFlowPrev) {
                 emitValue<output_iVOL>(ctx, vol);
-                emitValue<output_INS>(ctx, 1);
+                emitValue<output_End>(ctx, 1);
                 ins_t=mt;
                 // Calculate respiratory rate
                 Number resp_rate = 60/((ins_t-ins_t_prev)/1000.0);
                 emitValue<output_RR>(ctx, resp_rate);
                 ins_t_prev=ins_t;
             } else {
-                emitValue<output_EXP>(ctx, 1);
+                emitValue<output_Start>(ctx, 1);
             }
             inspFlowPrev=inspFlow;
             // reset volume

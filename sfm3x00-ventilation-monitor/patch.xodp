@@ -1,2 +1,284 @@
 {
+  "description": "Node for monitoring ventilation using sfm3x00. Measures flow rate, respiratory rate, inspiratory/insufflation volume and expiratory/exsufflation volume. End of inspiratory and expiratory phases are indicated by a pulse from INS and EXP, respectively.",
+  "links": [
+    {
+      "id": "BJjOJ3gaO",
+      "input": {
+        "nodeId": "HJ4uyhlTu",
+        "pinKey": "SklXM022hO"
+      },
+      "output": {
+        "nodeId": "B1tOyheTu",
+        "pinKey": "SkkfLc5ED"
+      }
+    },
+    {
+      "id": "By4xxngT_",
+      "input": {
+        "nodeId": "B1tOyheTu",
+        "pinKey": "rkTlIccND"
+      },
+      "output": {
+        "nodeId": "rJpJe2gpO",
+        "pinKey": "__out__"
+      }
+    },
+    {
+      "id": "SyUxlnxpu",
+      "input": {
+        "nodeId": "B1tOyheTu",
+        "pinKey": "S1mr9e0hu"
+      },
+      "output": {
+        "nodeId": "HyeayehxTu",
+        "pinKey": "__out__"
+      }
+    },
+    {
+      "id": "S15lgngpd",
+      "input": {
+        "nodeId": "HJ4uyhlTu",
+        "pinKey": "BkXVkT62u"
+      },
+      "output": {
+        "nodeId": "HJ8F12la_",
+        "pinKey": "__out__"
+      }
+    },
+    {
+      "id": "ByHbe3xpO",
+      "input": {
+        "nodeId": "HJ4uyhlTu",
+        "pinKey": "Byz7fChhhO"
+      },
+      "output": {
+        "nodeId": "HJbblhl6O",
+        "pinKey": "__out__"
+      }
+    },
+    {
+      "id": "Hko0W2lad",
+      "input": {
+        "nodeId": "B1rBb3xaO",
+        "pinKey": "__in__"
+      },
+      "output": {
+        "nodeId": "HJ4uyhlTu",
+        "pinKey": "rybXzR332u"
+      }
+    },
+    {
+      "id": "S1hC-3gad",
+      "input": {
+        "nodeId": "HkJPZngau",
+        "pinKey": "__in__"
+      },
+      "output": {
+        "nodeId": "HJ4uyhlTu",
+        "pinKey": "Hyb0eCh3O"
+      }
+    },
+    {
+      "id": "SJ6Cbnxpd",
+      "input": {
+        "nodeId": "SkeBS-2xpO",
+        "pinKey": "__in__"
+      },
+      "output": {
+        "nodeId": "HJ4uyhlTu",
+        "pinKey": "rkHH0nh3_"
+      }
+    },
+    {
+      "id": "Bk00-ngpu",
+      "input": {
+        "nodeId": "ryWHSZ2xpO",
+        "pinKey": "__in__"
+      },
+      "output": {
+        "nodeId": "HJ4uyhlTu",
+        "pinKey": "S1hUg022_"
+      }
+    },
+    {
+      "id": "ry1JG3xpd",
+      "input": {
+        "nodeId": "rkgpp-3xp_",
+        "pinKey": "__in__"
+      },
+      "output": {
+        "nodeId": "HJ4uyhlTu",
+        "pinKey": "H1gpRJ023u"
+      }
+    },
+    {
+      "id": "HkZJM3eaO",
+      "input": {
+        "nodeId": "B1pTZ2e6u",
+        "pinKey": "__in__"
+      },
+      "output": {
+        "nodeId": "HJ4uyhlTu",
+        "pinKey": "r1TCkC2hu"
+      }
+    },
+    {
+      "id": "SJm1zhlau",
+      "input": {
+        "nodeId": "S1frrbne6d",
+        "pinKey": "__in__"
+      },
+      "output": {
+        "nodeId": "HJ4uyhlTu",
+        "pinKey": "rJQfRn33d"
+      }
+    }
+  ],
+  "nodes": [
+    {
+      "id": "HJ4uyhlTu",
+      "position": {
+        "units": "slots",
+        "x": -14,
+        "y": -2
+      },
+      "type": "@/measure-ventilation"
+    },
+    {
+      "id": "B1tOyheTu",
+      "position": {
+        "units": "slots",
+        "x": -15,
+        "y": -3
+      },
+      "type": "@/sfm3x00-device"
+    },
+    {
+      "description": "Reset. Triggers soft reset and reinitialisation of sensor.",
+      "id": "HJ8F12la_",
+      "label": "RST",
+      "position": {
+        "units": "slots",
+        "x": -13,
+        "y": -4
+      },
+      "type": "xod/patch-nodes/input-pulse"
+    },
+    {
+      "boundLiterals": {
+        "__out__": "40h"
+      },
+      "description": "I²C address of device.",
+      "id": "rJpJe2gpO",
+      "label": "ADDR",
+      "position": {
+        "units": "slots",
+        "x": -15,
+        "y": -4
+      },
+      "type": "xod/patch-nodes/input-byte"
+    },
+    {
+      "description": "I²C bus",
+      "id": "HyeayehxTu",
+      "label": "I2C",
+      "position": {
+        "units": "slots",
+        "x": -14,
+        "y": -4
+      },
+      "type": "xod/i2c/input-i2c"
+    },
+    {
+      "boundLiterals": {
+        "__out__": "Continuously"
+      },
+      "description": "Update",
+      "id": "HJbblhl6O",
+      "label": "UPD",
+      "position": {
+        "units": "slots",
+        "x": -12,
+        "y": -4
+      },
+      "type": "xod/patch-nodes/input-pulse"
+    },
+    {
+      "description": "Flow rate (standard litre per minute). Inspiration/insufflation results in a positive flow. Flow is negative during expiration/exsufflation.",
+      "id": "B1rBb3xaO",
+      "label": "FR",
+      "position": {
+        "units": "slots",
+        "x": -14,
+        "y": -1
+      },
+      "type": "xod/patch-nodes/output-number"
+    },
+    {
+      "description": "Inspiratory/insufflation volume (cubic centimetres).",
+      "id": "SkeBS-2xpO",
+      "label": "iVOL",
+      "position": {
+        "units": "slots",
+        "x": -12,
+        "y": -1
+      },
+      "type": "xod/patch-nodes/output-number"
+    },
+    {
+      "description": "Expiratory/exsufflation volume (cubic centimetres).",
+      "id": "ryWHSZ2xpO",
+      "label": "eVOL",
+      "position": {
+        "units": "slots",
+        "x": -11,
+        "y": -1
+      },
+      "type": "xod/patch-nodes/output-number"
+    },
+    {
+      "description": "Pulse on read.",
+      "id": "S1frrbne6d",
+      "label": "DONE",
+      "position": {
+        "units": "slots",
+        "x": -8,
+        "y": -1
+      },
+      "type": "xod/patch-nodes/output-pulse"
+    },
+    {
+      "description": "Respiratory rate (breaths per minute).",
+      "id": "HkJPZngau",
+      "label": "RR",
+      "position": {
+        "units": "slots",
+        "x": -13,
+        "y": -1
+      },
+      "type": "xod/patch-nodes/output-number"
+    },
+    {
+      "description": "Pulse on end of expiration (start of inspiration).",
+      "id": "B1pTZ2e6u",
+      "label": "EXP",
+      "position": {
+        "units": "slots",
+        "x": -9,
+        "y": -1
+      },
+      "type": "xod/patch-nodes/output-pulse"
+    },
+    {
+      "description": "Pulse on end of inspiration (start of expiration).",
+      "id": "rkgpp-3xp_",
+      "label": "INS",
+      "position": {
+        "units": "slots",
+        "x": -10,
+        "y": -1
+      },
+      "type": "xod/patch-nodes/output-pulse"
+    }
+  ]
 }

@@ -1,4 +1,5 @@
 {
+  "description": "Patch to test sfm3x00-about node. Run in debug mode. Article number, serial number, offset and scale factor should be reported.",
   "links": [
     {
       "id": "rJcuAjJT_",

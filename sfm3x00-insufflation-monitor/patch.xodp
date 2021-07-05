@@ -1,2 +1,287 @@
 {
+  "description": "Node for monitoring insufflation/inspiration using sfm3x00. Measures flow rate, respiratory rate and insufflation volume. Beginning and end of insufflation are indicated by pulses from Start an End outputs.",
+  "links": [
+    {
+      "id": "Skmt-5xTu",
+      "input": {
+        "nodeId": "HkbYZclTd",
+        "pinKey": "BJxOXCgR2_"
+      },
+      "output": {
+        "nodeId": "rJqdW5gTO",
+        "pinKey": "SkkfLc5ED"
+      }
+    },
+    {
+      "id": "B1iqhWceTu",
+      "input": {
+        "nodeId": "HkbYZclTd",
+        "pinKey": "HJlTfbC3u"
+      },
+      "output": {
+        "nodeId": "r16YZ9epu",
+        "pinKey": "__out__"
+      }
+    },
+    {
+      "id": "H1ACWcl6_",
+      "input": {
+        "nodeId": "HkbYZclTd",
+        "pinKey": "SJKd7Ag0nd"
+      },
+      "output": {
+        "nodeId": "rJyTZqxT_",
+        "pinKey": "__out__"
+      }
+    },
+    {
+      "id": "rkl1z5lTd",
+      "input": {
+        "nodeId": "HkbYZclTd",
+        "pinKey": "HkzdmAgA3_"
+      },
+      "output": {
+        "nodeId": "B1N6Z5xp_",
+        "pinKey": "__out__"
+      }
+    },
+    {
+      "id": "r114Mqxpu",
+      "input": {
+        "nodeId": "Hk5gG9xpd",
+        "pinKey": "__in__"
+      },
+      "output": {
+        "nodeId": "HkbYZclTd",
+        "pinKey": "Bk-um0l02O"
+      }
+    },
+    {
+      "id": "rJ-Vzcgad",
+      "input": {
+        "nodeId": "rJzWGqx6u",
+        "pinKey": "__in__"
+      },
+      "output": {
+        "nodeId": "HkbYZclTd",
+        "pinKey": "ByuuXAgCh_"
+      }
+    },
+    {
+      "id": "rJG4M5lTO",
+      "input": {
+        "nodeId": "SkhMWzqx6O",
+        "pinKey": "__in__"
+      },
+      "output": {
+        "nodeId": "HkbYZclTd",
+        "pinKey": "ryE_XCg03d"
+      }
+    },
+    {
+      "id": "SJmNM9e6d",
+      "input": {
+        "nodeId": "rJUfG9l6_",
+        "pinKey": "__in__"
+      },
+      "output": {
+        "nodeId": "HkbYZclTd",
+        "pinKey": "SyIuQAlRhd"
+      }
+    },
+    {
+      "id": "BJS4fcla_",
+      "input": {
+        "nodeId": "Byszz9gaO",
+        "pinKey": "__in__"
+      },
+      "output": {
+        "nodeId": "HkbYZclTd",
+        "pinKey": "HkrdmCe0nu"
+      }
+    },
+    {
+      "id": "BkIEMqepO",
+      "input": {
+        "nodeId": "B12iff5ga_",
+        "pinKey": "__in__"
+      },
+      "output": {
+        "nodeId": "HkbYZclTd",
+        "pinKey": "Hy_QRe0hu"
+      }
+    },
+    {
+      "id": "SJRpM9eTd",
+      "input": {
+        "nodeId": "rJqdW5gTO",
+        "pinKey": "S1mr9e0hu"
+      },
+      "output": {
+        "nodeId": "BJ5Tz9lad",
+        "pinKey": "__out__"
+      }
+    },
+    {
+      "id": "SyvMehx6O",
+      "input": {
+        "nodeId": "rJqdW5gTO",
+        "pinKey": "rkTlIccND"
+      },
+      "output": {
+        "nodeId": "HJQzehe6_",
+        "pinKey": "__out__"
+      }
+    }
+  ],
+  "nodes": [
+    {
+      "id": "rJqdW5gTO",
+      "position": {
+        "units": "slots",
+        "x": 3,
+        "y": 1
+      },
+      "type": "@/sfm3x00-device"
+    },
+    {
+      "id": "HkbYZclTd",
+      "position": {
+        "units": "slots",
+        "x": 4,
+        "y": 2
+      },
+      "type": "@/measure-insufflation"
+    },
+    {
+      "boundLiterals": {
+        "__out__": "5"
+      },
+      "description": "Flow threshold for detection of inspiration/insufflation.",
+      "id": "r16YZ9epu",
+      "label": "IT",
+      "position": {
+        "units": "slots",
+        "x": 5,
+        "y": 0
+      },
+      "type": "xod/patch-nodes/input-number"
+    },
+    {
+      "description": "Reset. Triggers soft reset and reinitialisation of sensor.",
+      "id": "rJyTZqxT_",
+      "label": "RST",
+      "position": {
+        "units": "slots",
+        "x": 6,
+        "y": 0
+      },
+      "type": "xod/patch-nodes/input-pulse"
+    },
+    {
+      "boundLiterals": {
+        "__out__": "Continuously"
+      },
+      "description": "Update",
+      "id": "B1N6Z5xp_",
+      "label": "UPD",
+      "position": {
+        "units": "slots",
+        "x": 7,
+        "y": 0
+      },
+      "type": "xod/patch-nodes/input-pulse"
+    },
+    {
+      "description": "Flow rate (standard litre per minute).",
+      "id": "Hk5gG9xpd",
+      "label": "FR",
+      "position": {
+        "units": "slots",
+        "x": 4,
+        "y": 3
+      },
+      "type": "xod/patch-nodes/output-number"
+    },
+    {
+      "description": "Respiratory rate (breaths per minute).",
+      "id": "rJzWGqx6u",
+      "label": "RR",
+      "position": {
+        "units": "slots",
+        "x": 5,
+        "y": 3
+      },
+      "type": "xod/patch-nodes/output-number"
+    },
+    {
+      "description": "Inspiratory volume (cubic centimetres).",
+      "id": "SkhMWzqx6O",
+      "label": "iVOL",
+      "position": {
+        "units": "slots",
+        "x": 6,
+        "y": 3
+      },
+      "type": "xod/patch-nodes/output-number"
+    },
+    {
+      "description": "Pulse on end of insufflation/inspiration.",
+      "id": "rJUfG9l6_",
+      "label": "End",
+      "position": {
+        "units": "slots",
+        "x": 8,
+        "y": 3
+      },
+      "type": "xod/patch-nodes/output-pulse"
+    },
+    {
+      "description": "Pulse on start of insufflation/inspiration.",
+      "id": "Byszz9gaO",
+      "label": "Start",
+      "position": {
+        "units": "slots",
+        "x": 7,
+        "y": 3
+      },
+      "type": "xod/patch-nodes/output-pulse"
+    },
+    {
+      "description": "Pulse on read.",
+      "id": "B12iff5ga_",
+      "label": "DONE",
+      "position": {
+        "units": "slots",
+        "x": 9,
+        "y": 3
+      },
+      "type": "xod/patch-nodes/output-pulse"
+    },
+    {
+      "description": "I²C bus",
+      "id": "BJ5Tz9lad",
+      "label": "I2C",
+      "position": {
+        "units": "slots",
+        "x": 4,
+        "y": 0
+      },
+      "type": "xod/i2c/input-i2c"
+    },
+    {
+      "boundLiterals": {
+        "__out__": "40h"
+      },
+      "description": "I²C address of device.",
+      "id": "HJQzehe6_",
+      "label": "ADDR",
+      "position": {
+        "units": "slots",
+        "x": 3,
+        "y": 0
+      },
+      "type": "xod/patch-nodes/input-byte"
+    }
+  ]
 }

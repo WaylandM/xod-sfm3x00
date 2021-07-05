@@ -55,6 +55,7 @@ node {
                 }
                 delay(20);
             }
+            mt_prev = millis();
             return;
         }
 

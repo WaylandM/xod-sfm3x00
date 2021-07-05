@@ -1,5 +1,5 @@
 {
-  "description": "Monitor unidirectional flow (inspiration/insufflation). Measures flow rate, respiratory rate and inspiratory volume.",
+  "description": "Monitor unidirectional flow (inspiration/insufflation). Measures flow rate, respiratory rate and inspiration/insufflation volume.",
   "nodes": [
     {
       "description": "Pulse on read.",
@@ -58,7 +58,7 @@
       "type": "xod/patch-nodes/not-implemented-in-xod"
     },
     {
-      "description": "Inspiratory volume (cubic centimetres).",
+      "description": "Insufflation volume (cubic centimetres).",
       "id": "ryE_XCg03d",
       "label": "iVOL",
       "position": {
@@ -69,23 +69,23 @@
       "type": "xod/patch-nodes/output-number"
     },
     {
-      "description": "Pulse on start of expiration.",
+      "description": "Pulse on start of insufflation.",
       "id": "HkrdmCe0nu",
-      "label": "EXP",
+      "label": "Start",
       "position": {
         "units": "slots",
-        "x": 4,
+        "x": 3,
         "y": 2
       },
       "type": "xod/patch-nodes/output-pulse"
     },
     {
-      "description": "Pulse on start of inspiration.",
+      "description": "Pulse on end of insufflation.",
       "id": "SyIuQAlRhd",
-      "label": "INS",
+      "label": "End",
       "position": {
         "units": "slots",
-        "x": 3,
+        "x": 4,
         "y": 2
       },
       "type": "xod/patch-nodes/output-pulse"
@@ -116,7 +116,7 @@
       "boundLiterals": {
         "__out__": "5"
       },
-      "description": "Inspiratory threshold (SLM).",
+      "description": "Insufflation threshold (SLM).",
       "id": "HJlTfbC3u",
       "label": "IT",
       "position": {

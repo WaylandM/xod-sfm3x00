@@ -1,4 +1,5 @@
 {
+  "description": "Measurement of flow and volume using SFM3x00. This node is designed for use with a ventilator. It does not detect inspiration or expiration, but relies on a pulse to the RVol input to reset volume measurements at the start of each breathing cycle.",
   "links": [
     {
       "id": "SJ5Jy2kTd",

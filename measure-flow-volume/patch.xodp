@@ -48,16 +48,6 @@
       "type": "xod/patch-nodes/input-pulse"
     },
     {
-      "description": "Measure flow rate (standard litre per minute) and inspiratory volume (cubic centimetres).",
-      "id": "HJ70yBJyau",
-      "position": {
-        "units": "slots",
-        "x": 0,
-        "y": 1
-      },
-      "type": "xod/patch-nodes/not-implemented-in-xod"
-    },
-    {
       "description": "Inspiratory volume (cubic centimetres).",
       "id": "rkN0JBJJad",
       "label": "iVOL",
@@ -120,6 +110,15 @@
         "y": 1
       },
       "type": "xod/patch-nodes/utility"
+    },
+    {
+      "id": "H1Q-jjepd",
+      "position": {
+        "units": "slots",
+        "x": 0,
+        "y": 1
+      },
+      "type": "xod/patch-nodes/not-implemented-in-xod"
     }
   ]
 }

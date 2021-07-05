@@ -7,9 +7,6 @@ node {
     TimeMs ins_t = 0;
     // Time of previous inspiration (ms).
     TimeMs ins_t_prev = 0;
-    // Flow rate (standard litres per minute).
-    // Flow has positive value for inspiration/insufflation, negative for expiration/exsufflation.
-    Number flow;
 
     void evaluate(Context ctx) {
 
@@ -18,9 +15,12 @@ node {
             return;
 
         TimeMs mt = transactionTime();
-
-        if (isSettingUp())
+        
+        if (isSettingUp()) {
+            delay(100);
+            mt_prev = millis();
             return;
+        }
 
         auto sensor = getValue<input_DEV>(ctx);
 
@@ -32,7 +32,9 @@ node {
         }
 
         // Measure flow rate, volume and respiratory rate.
-        flow = sensor->readFlow();
+        // Flow rate (standard litres per minute).
+        // Flow has positive value for inspiration/insufflation, negative for expiration/exsufflation.
+        Number flow = sensor->readFlow();
 
         TimeMs mt_delta = mt - mt_prev;
         mt_prev = mt;

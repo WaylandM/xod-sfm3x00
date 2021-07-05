@@ -1,16 +1,6 @@
 {
+  "description": "Patch to test sfm3x00-insufflation-monitor. Run in debug mode.",
   "links": [
-    {
-      "id": "rk7hJMCnu",
-      "input": {
-        "nodeId": "HJis1fR2d",
-        "pinKey": "BJxOXCgR2_"
-      },
-      "output": {
-        "nodeId": "rJ-nyzAnO",
-        "pinKey": "SkkfLc5ED"
-      }
-    },
     {
       "id": "rJPQ61GR3O",
       "input": {
@@ -34,91 +24,95 @@
       }
     },
     {
-      "id": "SkxRyz0nO",
+      "id": "H1ul79ead",
       "input": {
-        "nodeId": "SJLXTkGAhu",
-        "pinKey": "HkXK-dGob"
-      },
-      "output": {
-        "nodeId": "HJis1fR2d",
-        "pinKey": "Bk-um0l02O"
-      }
-    },
-    {
-      "id": "B1WCyMR2u",
-      "input": {
-        "nodeId": "Hke7pkf03_",
-        "pinKey": "HkXK-dGob"
-      },
-      "output": {
-        "nodeId": "HJis1fR2d",
-        "pinKey": "ByuuXAgCh_"
-      }
-    },
-    {
-      "id": "HJzRJMAnO",
-      "input": {
-        "nodeId": "HySQp1zRnu",
-        "pinKey": "HkXK-dGob"
-      },
-      "output": {
-        "nodeId": "HJis1fR2d",
-        "pinKey": "ryE_XCg03d"
-      }
-    },
-    {
-      "id": "r1B0yzChd",
-      "input": {
-        "nodeId": "BymX6JGRhd",
-        "pinKey": "HJAq-A_8-"
-      },
-      "output": {
-        "nodeId": "HJis1fR2d",
-        "pinKey": "SyIuQAlRhd"
-      }
-    },
-    {
-      "id": "B1L0kGR2_",
-      "input": {
-        "nodeId": "B1E7pyz03d",
-        "pinKey": "HJAq-A_8-"
-      },
-      "output": {
-        "nodeId": "HJis1fR2d",
-        "pinKey": "HkrdmCe0nu"
-      }
-    },
-    {
-      "id": "H1q-PU0hd",
-      "input": {
-        "nodeId": "HJis1fR2d",
-        "pinKey": "SJKd7Ag0nd"
+        "nodeId": "HJfgQcl6O",
+        "pinKey": "rJyTZqxT_"
       },
       "output": {
         "nodeId": "BJBZvUR3u",
         "pinKey": "Bkf4BDsmV"
       }
+    },
+    {
+      "id": "By2f75gaO",
+      "input": {
+        "nodeId": "SJLXTkGAhu",
+        "pinKey": "HkXK-dGob"
+      },
+      "output": {
+        "nodeId": "HJfgQcl6O",
+        "pinKey": "Hk5gG9xpd"
+      }
+    },
+    {
+      "id": "SypMX9epd",
+      "input": {
+        "nodeId": "Hke7pkf03_",
+        "pinKey": "HkXK-dGob"
+      },
+      "output": {
+        "nodeId": "HJfgQcl6O",
+        "pinKey": "rJzWGqx6u"
+      }
+    },
+    {
+      "id": "r1AM75gpd",
+      "input": {
+        "nodeId": "HySQp1zRnu",
+        "pinKey": "HkXK-dGob"
+      },
+      "output": {
+        "nodeId": "HJfgQcl6O",
+        "pinKey": "SkhMWzqx6O"
+      }
+    },
+    {
+      "id": "HJtLH9ead",
+      "input": {
+        "nodeId": "BymX6JGRhd",
+        "pinKey": "HJAq-A_8-"
+      },
+      "output": {
+        "nodeId": "HJfgQcl6O",
+        "pinKey": "Byszz9gaO"
+      }
+    },
+    {
+      "id": "B1j8Sqg6_",
+      "input": {
+        "nodeId": "B1E7pyz03d",
+        "pinKey": "HJAq-A_8-"
+      },
+      "output": {
+        "nodeId": "HJfgQcl6O",
+        "pinKey": "rJUfG9l6_"
+      }
+    },
+    {
+      "id": "Bk-qL72xaO",
+      "input": {
+        "nodeId": "SJ58XhxTd",
+        "pinKey": "HkXK-dGob"
+      },
+      "output": {
+        "nodeId": "SJl9I7ne6O",
+        "pinKey": "r1yhZRd8W"
+      }
+    },
+    {
+      "id": "ByC87nlad",
+      "input": {
+        "nodeId": "SJl9I7ne6O",
+        "pinKey": "HJAq-A_8-"
+      },
+      "output": {
+        "nodeId": "HJfgQcl6O",
+        "pinKey": "B12iff5ga_"
+      }
     }
   ],
   "nodes": [
-    {
-      "id": "HJis1fR2d",
-      "position": {
-        "units": "slots",
-        "x": 3,
-        "y": 1
-      },
-      "type": "@/measure-insufflation"
-    },
-    {
-      "id": "rJ-nyzAnO",
-      "position": {
-        "units": "slots",
-        "x": 3,
-        "y": 0
-      },
-      "type": "@/sfm3x00-device"
-    },
     {
       "id": "Hke7pkf03_",
       "position": {
@@ -205,6 +199,33 @@
         "y": 0
       },
       "type": "xod/debug/tweak-pulse"
+    },
+    {
+      "id": "HJfgQcl6O",
+      "position": {
+        "units": "slots",
+        "x": 3,
+        "y": 1
+      },
+      "type": "@/sfm3x00-insufflation-monitor"
+    },
+    {
+      "id": "SJ58XhxTd",
+      "position": {
+        "units": "slots",
+        "x": 13,
+        "y": 3
+      },
+      "type": "xod/debug/watch"
+    },
+    {
+      "id": "SJl9I7ne6O",
+      "position": {
+        "units": "slots",
+        "x": 13,
+        "y": 2
+      },
+      "type": "xod/core/count"
     }
   ]
 }

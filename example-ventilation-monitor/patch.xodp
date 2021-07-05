@@ -1,60 +1,6 @@
 {
+  "description": "Patch to test sfm3x00-ventilation-monitor node. Run in debug mode.",
   "links": [
-    {
-      "id": "BkDKop3hu",
-      "input": {
-        "nodeId": "HJp_ip3nd",
-        "pinKey": "SklXM022hO"
-      },
-      "output": {
-        "nodeId": "BkrKjTnh_",
-        "pinKey": "SkkfLc5ED"
-      }
-    },
-    {
-      "id": "HJ3qsphnu",
-      "input": {
-        "nodeId": "H1d9jT2hu",
-        "pinKey": "HkXK-dGob"
-      },
-      "output": {
-        "nodeId": "HJp_ip3nd",
-        "pinKey": "rkHH0nh3_"
-      }
-    },
-    {
-      "id": "ryA9oT32u",
-      "input": {
-        "nodeId": "SJk9spnhd",
-        "pinKey": "HkXK-dGob"
-      },
-      "output": {
-        "nodeId": "HJp_ip3nd",
-        "pinKey": "rybXzR332u"
-      }
-    },
-    {
-      "id": "rkwEzAhhO",
-      "input": {
-        "nodeId": "SJj7zRhn_",
-        "pinKey": "HJAq-A_8-"
-      },
-      "output": {
-        "nodeId": "HJp_ip3nd",
-        "pinKey": "H1gpRJ023u"
-      }
-    },
-    {
-      "id": "ByhEMCh3O",
-      "input": {
-        "nodeId": "SkYEfA32O",
-        "pinKey": "HJAq-A_8-"
-      },
-      "output": {
-        "nodeId": "HJp_ip3nd",
-        "pinKey": "r1TCkC2hu"
-      }
-    },
     {
       "id": "SJREzC2nu",
       "input": {
@@ -78,61 +24,106 @@
       }
     },
     {
-      "id": "BJ_0zChnd",
+      "id": "BkcE7ngTO",
       "input": {
-        "nodeId": "B1N0GRn2_",
-        "pinKey": "HkXK-dGob"
-      },
-      "output": {
-        "nodeId": "HJp_ip3nd",
-        "pinKey": "S1hUg022_"
-      }
-    },
-    {
-      "id": "HyZU_C2nO",
-      "input": {
-        "nodeId": "ryCNdCh2d",
-        "pinKey": "HkXK-dGob"
-      },
-      "output": {
-        "nodeId": "HJp_ip3nd",
-        "pinKey": "Hyb0eCh3O"
-      }
-    },
-    {
-      "id": "B1p7-gR3_",
-      "input": {
-        "nodeId": "HJp_ip3nd",
-        "pinKey": "BkXVkT62u"
+        "nodeId": "HyH4X2e6O",
+        "pinKey": "HJ8F12la_"
       },
       "output": {
         "nodeId": "SJKQ-xAnd",
         "pinKey": "Bkf4BDsmV"
       }
+    },
+    {
+      "id": "BJ2EQ3la_",
+      "input": {
+        "nodeId": "SJk9spnhd",
+        "pinKey": "HkXK-dGob"
+      },
+      "output": {
+        "nodeId": "HyH4X2e6O",
+        "pinKey": "B1rBb3xaO"
+      }
+    },
+    {
+      "id": "r1AVm3xTu",
+      "input": {
+        "nodeId": "ryCNdCh2d",
+        "pinKey": "HkXK-dGob"
+      },
+      "output": {
+        "nodeId": "HyH4X2e6O",
+        "pinKey": "HkJPZngau"
+      }
+    },
+    {
+      "id": "r1yrQnx6O",
+      "input": {
+        "nodeId": "H1d9jT2hu",
+        "pinKey": "HkXK-dGob"
+      },
+      "output": {
+        "nodeId": "HyH4X2e6O",
+        "pinKey": "SkeBS-2xpO"
+      }
+    },
+    {
+      "id": "SkWHQnxau",
+      "input": {
+        "nodeId": "B1N0GRn2_",
+        "pinKey": "HkXK-dGob"
+      },
+      "output": {
+        "nodeId": "HyH4X2e6O",
+        "pinKey": "ryWHSZ2xpO"
+      }
+    },
+    {
+      "id": "rJMSQ2eaO",
+      "input": {
+        "nodeId": "SJj7zRhn_",
+        "pinKey": "HJAq-A_8-"
+      },
+      "output": {
+        "nodeId": "HyH4X2e6O",
+        "pinKey": "rkgpp-3xp_"
+      }
+    },
+    {
+      "id": "rJVBXne6d",
+      "input": {
+        "nodeId": "SkYEfA32O",
+        "pinKey": "HJAq-A_8-"
+      },
+      "output": {
+        "nodeId": "HyH4X2e6O",
+        "pinKey": "B1pTZ2e6u"
+      }
+    },
+    {
+      "id": "BJWnrmhxau",
+      "input": {
+        "nodeId": "SJ3S7he6_",
+        "pinKey": "HkXK-dGob"
+      },
+      "output": {
+        "nodeId": "SJg3B7hxaO",
+        "pinKey": "r1yhZRd8W"
+      }
+    },
+    {
+      "id": "S1RSXnead",
+      "input": {
+        "nodeId": "SJg3B7hxaO",
+        "pinKey": "HJAq-A_8-"
+      },
+      "output": {
+        "nodeId": "HyH4X2e6O",
+        "pinKey": "S1frrbne6d"
+      }
     }
   ],
   "nodes": [
-    {
-      "boundLiterals": {
-        "Byz7fChhhO": "Continuously"
-      },
-      "id": "HJp_ip3nd",
-      "position": {
-        "units": "slots",
-        "x": 4,
-        "y": 3
-      },
-      "type": "@/measure-ventilation"
-    },
-    {
-      "id": "BkrKjTnh_",
-      "position": {
-        "units": "slots",
-        "x": 3,
-        "y": 2
-      },
-      "type": "@/sfm3x00-device"
-    },
     {
       "id": "SJk9spnhd",
       "position": {
@@ -233,6 +224,33 @@
         "y": 2
       },
       "type": "xod/debug/tweak-pulse"
+    },
+    {
+      "id": "HyH4X2e6O",
+      "position": {
+        "units": "slots",
+        "x": 4,
+        "y": 3
+      },
+      "type": "@/sfm3x00-ventilation-monitor"
+    },
+    {
+      "id": "SJ3S7he6_",
+      "position": {
+        "units": "slots",
+        "x": 15,
+        "y": 5
+      },
+      "type": "xod/debug/watch"
+    },
+    {
+      "id": "SJg3B7hxaO",
+      "position": {
+        "units": "slots",
+        "x": 15,
+        "y": 4
+      },
+      "type": "xod/core/count"
     }
   ]
 }
