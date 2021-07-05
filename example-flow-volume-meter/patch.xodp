@@ -1,39 +1,6 @@
 {
   "links": [
     {
-      "id": "BkzcPb16_",
-      "input": {
-        "nodeId": "SJSBDbypO",
-        "pinKey": "H1_Ckr1k6u"
-      },
-      "output": {
-        "nodeId": "rJptvby6d",
-        "pinKey": "Bkf4BDsmV"
-      }
-    },
-    {
-      "id": "Syv9wZ1Td",
-      "input": {
-        "nodeId": "SJSBDbypO",
-        "pinKey": "HJndSJJ6d"
-      },
-      "output": {
-        "nodeId": "BJEqwW1a_",
-        "pinKey": "Bkf4BDsmV"
-      }
-    },
-    {
-      "id": "SJWjvZypd",
-      "input": {
-        "nodeId": "SJSBDbypO",
-        "pinKey": "rJQ0S1JT_"
-      },
-      "output": {
-        "nodeId": "By25wZ16_",
-        "pinKey": "Sk1e_NIVE"
-      }
-    },
-    {
       "id": "rJM3vZk6u",
       "input": {
         "nodeId": "SJSBDbypO",
@@ -89,36 +56,6 @@
       "type": "@/measure-flow-volume"
     },
     {
-      "id": "rJptvby6d",
-      "position": {
-        "units": "slots",
-        "x": 5,
-        "y": 1
-      },
-      "type": "xod/debug/tweak-pulse"
-    },
-    {
-      "id": "BJEqwW1a_",
-      "position": {
-        "units": "slots",
-        "x": 7,
-        "y": 1
-      },
-      "type": "xod/debug/tweak-pulse"
-    },
-    {
-      "boundLiterals": {
-        "Sk1e_NIVE": "True"
-      },
-      "id": "By25wZ16_",
-      "position": {
-        "units": "slots",
-        "x": 6,
-        "y": 1
-      },
-      "type": "xod/debug/tweak-boolean"
-    },
-    {
       "id": "B1lhDW1pu",
       "position": {
         "units": "slots",
@@ -168,6 +105,45 @@
         "width": 2
       },
       "type": "xod/debug/watch"
+    },
+    {
+      "id": "rJp2GOeTu",
+      "position": {
+        "units": "slots",
+        "x": 14,
+        "y": 2
+      },
+      "type": "@/sfm3x00-flow-volume-meter"
+    },
+    {
+      "id": "rkI6GOlT_",
+      "position": {
+        "units": "slots",
+        "x": 15,
+        "y": 1
+      },
+      "type": "xod/debug/tweak-pulse"
+    },
+    {
+      "id": "rkgIazdl6d",
+      "position": {
+        "units": "slots",
+        "x": 18,
+        "y": 1
+      },
+      "type": "xod/debug/tweak-pulse"
+    },
+    {
+      "boundLiterals": {
+        "Sk1e_NIVE": "True"
+      },
+      "id": "H1bLaG_xa_",
+      "position": {
+        "units": "slots",
+        "x": 17,
+        "y": 1
+      },
+      "type": "xod/debug/tweak-boolean"
     }
   ]
 }

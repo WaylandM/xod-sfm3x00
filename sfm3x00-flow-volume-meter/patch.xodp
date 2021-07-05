@@ -109,6 +109,17 @@
         "nodeId": "ryh2RjkTd",
         "pinKey": "B16Iv-1pd"
       }
+    },
+    {
+      "id": "By517dg6O",
+      "input": {
+        "nodeId": "ryh2RjkTd",
+        "pinKey": "rJQ0S1JT_"
+      },
+      "output": {
+        "nodeId": "BkhCfOx6d",
+        "pinKey": "__out__"
+      }
     }
   ],
   "nodes": [
@@ -134,6 +145,7 @@
       "boundLiterals": {
         "__out__": "40h"
       },
+      "description": "I²C address of device.",
       "id": "Syvxk2kTO",
       "label": "ADDR",
       "position": {
@@ -144,6 +156,7 @@
       "type": "xod/patch-nodes/input-byte"
     },
     {
+      "description": "I²C bus",
       "id": "S1dWkn1T_",
       "label": "I2C",
       "position": {
@@ -154,6 +167,7 @@
       "type": "xod/i2c/input-i2c"
     },
     {
+      "description": "Reset. Triggers soft reset.",
       "id": "S1r4k2J6O",
       "label": "RST",
       "position": {
@@ -164,6 +178,7 @@
       "type": "xod/patch-nodes/input-pulse"
     },
     {
+      "description": "Reset volume measurements to zero.",
       "id": "HkqVJ3k6_",
       "label": "RVol",
       "position": {
@@ -174,6 +189,10 @@
       "type": "xod/patch-nodes/input-pulse"
     },
     {
+      "boundLiterals": {
+        "__out__": "Continuously"
+      },
+      "description": "Update. Trigger read.",
       "id": "r1ncNyhkpd",
       "label": "UPD",
       "position": {
@@ -184,6 +203,7 @@
       "type": "xod/patch-nodes/input-pulse"
     },
     {
+      "description": "Flow rate (standard litre per minute). Inspiration/insufflation results in a positive flow. Flow is negative during expiration/exsufflation.",
       "id": "SyF8J3k6O",
       "label": "FR",
       "position": {
@@ -194,6 +214,7 @@
       "type": "xod/patch-nodes/output-number"
     },
     {
+      "description": "Inspiratory/insufflation volume (cubic centimetres).",
       "id": "ryCUk2Jau",
       "label": "iVOL",
       "position": {
@@ -204,6 +225,7 @@
       "type": "xod/patch-nodes/output-number"
     },
     {
+      "description": "Expiratory/exsufflation volume (cubic centimetres).",
       "id": "HJhA8J3yau",
       "label": "eVOL",
       "position": {
@@ -214,6 +236,7 @@
       "type": "xod/patch-nodes/output-number"
     },
     {
+      "description": "Pulse on read.",
       "id": "rk4v12yaO",
       "label": "DONE",
       "position": {
@@ -222,6 +245,17 @@
         "y": 3
       },
       "type": "xod/patch-nodes/output-pulse"
+    },
+    {
+      "description": "Enable volume measurement. When true volume will be measured.",
+      "id": "BkhCfOx6d",
+      "label": "VolEn",
+      "position": {
+        "units": "slots",
+        "x": 4,
+        "y": 0
+      },
+      "type": "xod/patch-nodes/input-boolean"
     }
   ]
 }

@@ -1,2 +1,151 @@
 {
+  "description": "Patch to test sfm3x00-flow-meter. The sfm3x00-flow-meter can be reset by sending a pulse to the RST input. Run in debug mode and use the tweak node to send a pulse to the RST input.",
+  "links": [
+    {
+      "id": "BJiez_e6O",
+      "input": {
+        "nodeId": "r16RWdgaO",
+        "pinKey": "S1z1-icVw"
+      },
+      "output": {
+        "nodeId": "rJvxM_ga_",
+        "pinKey": "Bkf4BDsmV"
+      }
+    },
+    {
+      "id": "rJJmMOla_",
+      "input": {
+        "nodeId": "ryGzM_lTO",
+        "pinKey": "HkXK-dGob"
+      },
+      "output": {
+        "nodeId": "r16RWdgaO",
+        "pinKey": "SknHgsqVw"
+      }
+    },
+    {
+      "id": "rkVEG_gpO",
+      "input": {
+        "nodeId": "H107f_g6u",
+        "pinKey": "HJAq-A_8-"
+      },
+      "output": {
+        "nodeId": "r16RWdgaO",
+        "pinKey": "rkxnBliqEw"
+      }
+    },
+    {
+      "id": "B1Hrzul6O",
+      "input": {
+        "nodeId": "rk3Efux6u",
+        "pinKey": "HkXK-dGob"
+      },
+      "output": {
+        "nodeId": "H107f_g6u",
+        "pinKey": "r1yhZRd8W"
+      }
+    },
+    {
+      "id": "HkvrfOla_",
+      "input": {
+        "nodeId": "ryn2NM_xT_",
+        "pinKey": "HkXK-dGob"
+      },
+      "output": {
+        "nodeId": "SkG4GOxaO",
+        "pinKey": "r1yhZRd8W"
+      }
+    },
+    {
+      "id": "ByYBMueTd",
+      "input": {
+        "nodeId": "SkG4GOxaO",
+        "pinKey": "HJAq-A_8-"
+      },
+      "output": {
+        "nodeId": "r16RWdgaO",
+        "pinKey": "B1_VLT54v"
+      }
+    }
+  ],
+  "nodes": [
+    {
+      "id": "r16RWdgaO",
+      "position": {
+        "units": "slots",
+        "x": 2,
+        "y": 1
+      },
+      "type": "@/sfm3x00-flow-meter"
+    },
+    {
+      "id": "rJvxM_ga_",
+      "position": {
+        "units": "slots",
+        "x": 4,
+        "y": 0
+      },
+      "type": "xod/debug/tweak-pulse"
+    },
+    {
+      "id": "ryGzM_lTO",
+      "position": {
+        "units": "slots",
+        "x": 0,
+        "y": 3
+      },
+      "size": {
+        "height": 1,
+        "units": "slots",
+        "width": 2
+      },
+      "type": "xod/debug/watch"
+    },
+    {
+      "id": "H107f_g6u",
+      "position": {
+        "units": "slots",
+        "x": 2,
+        "y": 2
+      },
+      "type": "xod/core/count"
+    },
+    {
+      "id": "SkG4GOxaO",
+      "position": {
+        "units": "slots",
+        "x": 5,
+        "y": 2
+      },
+      "type": "xod/core/count"
+    },
+    {
+      "id": "rk3Efux6u",
+      "position": {
+        "units": "slots",
+        "x": 3,
+        "y": 3
+      },
+      "size": {
+        "height": 1,
+        "units": "slots",
+        "width": 2
+      },
+      "type": "xod/debug/watch"
+    },
+    {
+      "id": "ryn2NM_xT_",
+      "position": {
+        "units": "slots",
+        "x": 6,
+        "y": 3
+      },
+      "size": {
+        "height": 1,
+        "units": "slots",
+        "width": 2
+      },
+      "type": "xod/debug/watch"
+    }
+  ]
 }
