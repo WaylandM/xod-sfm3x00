@@ -18,9 +18,8 @@ node {
         auto address = getValue<input_ADDR>(ctx);
         auto wire = getValue<input_I2C>(ctx);
 
-        Type sensor = new (mem) SFM3X00(address);
+        Type sensor = new (mem) SFM3X00(address, *wire);
 
-        wire->begin();
         sensor->begin();
 
         emitValue<output_DEV>(ctx, sensor);
